@@ -71,7 +71,8 @@ def validate_events(log: object, registry: object, expected_root: str | None) ->
         admin.require_keys(event, EVENT_KEYS, tag)
         admin.check(admin.number(event["seq"], tag + ".seq", low=1) == i+1,
                     tag + ": noncontiguous/replayed sequence")
-        admin.check(event["kind"] in EVENT_KINDS, tag + ": unknown event kind")
+        admin.check(type(event["kind"]) is str and event["kind"] in EVENT_KINDS,
+                    tag + ": unknown event kind")
         grant_ref = admin.opaque(event["grant_ref"], tag + ".grant_ref")
         admin.check(grant_ref in grants, tag + ": unknown grant")
         grant = grants[grant_ref]
