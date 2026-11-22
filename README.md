@@ -33,6 +33,24 @@ Nothing here creates or confirms an IRS 501(c)(3) determination, an authorized F
 
 **Do not promise 4% of Foundation income, net proceeds, charitable grants or donations.** A charitable nonprofit cannot issue ordinary private economic equity or distribute net earnings to insiders. Merely renaming shares as "royalties", "residuals", "vested Foundation compensation" or "founder participation" does not avoid the private-inurement and excess-benefit rules.
 
+## Founding Contributor Administration (synthetic, fail closed)
+
+[Contributor administration and execution-gates guide](docs/contributor-administration.md) describes an offline **planning-only** system for non-voting commercial grants, multi-contributor dilution, vesting evidence, and legal-stage controls. It does **not** manage real identities, grant signatures or actual Foundation payments.
+
+- [Strict registry JSON schema](schemas/contributor-registry.schema.json)
+- [Read-only grant and vesting validator](scripts/contributor_admin.py)
+- [Three-grant hypothetical simultaneous cohort](fixtures/multi_grant_simulation.json) — three separate 4% non-voting Company grants in a fictional 25,000-unit final cap table
+- [Two-grant hypothetical sequential dilution example](fixtures/sequential_dilution_simulation.json) — first 4% dilutes to 3.84% after the second grant
+- [Administrative negative tests](tests/test_contributor_admin.py)
+
+```sh
+python3 scripts/contributor_admin.py audit fixtures/multi_grant_simulation.json
+python3 scripts/contributor_admin.py audit fixtures/sequential_dilution_simulation.json
+python3 -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+**Strict boundary:** Only synthetic `DRAFT` and `READY_FOR_COUNSEL` records are permitted by this repository's CLI, with `legal_claims_verified=false`. `APPROVED` and `EXECUTED` are intentionally rejected and can only be established by independently authenticated, authorized and signed **restricted legal records**. A CI success means **schema and arithmetic checks only**, never approved compensation, legal formation, equity issuance or grant distributions. Real personal and signing records must stay outside GitHub in authorized restricted storage.
+
 ## Legal and signing gates
 
 Before signing, U.S. nonprofit/tax counsel and relevant local/employment counsel should resolve the actual legal entities, location and charitable classification; Company non-voting share class and 4% fully diluted cap table; statutory minority shareholder rights; wage/classification rules; reasonable nonprofit compensation; independent board approval, comparability and minutes; contributor IP chain of title; potential related-party and inter-company licensing; deferred compensation tax rules; and any Form 990/Schedule L reporting. **No Foundation salary/royalty is guaranteed or earned just from founding status.** An authorized, funded work order or written employment agreement creates an enforceable payment obligation when compensation is lawfully earned.
