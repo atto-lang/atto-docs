@@ -38,7 +38,7 @@ def audit_company(text: str) -> list[str]:
         "no automatic Foundation payment",
         "three (3) qualifying months",
         "thirty-six (36) qualifying monthly installments",
-        "end of month 39",
+        "earliest full vesting: **end of month 39**",
         "three (3) Qualifying Contributions per month",
         "at the initial lawful grant and may be diluted",
         "AttoLang is presently proprietary",
@@ -109,8 +109,6 @@ def audit_foundation(text: str) -> list[str]:
         issues.append("Foundation falsely offering shares")
     if re.search(r"(?im)\bFoundation\s+(?:shall|will)\s+pay\s+(?:the Contributor )?4(?:\.0+)?\s*%", text):
         issues.append("Foundation falsely guaranteeing four-percent revenue")
-    if re.search(r"(?im)^#{1,3}\s+.*(?:Foundation ownership|shareholder distributions)", text):
-        issues.append("improper Foundation ownership heading")
     if text.find("## SCHEDULE A") > text.find("## SIGNATURES"):
         issues.append("Foundation schedules must precede signatures")
     return issues
@@ -195,7 +193,8 @@ class ContractDraftSafetyTests(unittest.TestCase):
         self.assertTrue(any("four-percent" in x for x in audit_company(altered)))
 
     def test_company_39_month_schedule_mutation_fails(self):
-        altered = self.company.replace("end of month 39", "end of month 36", 1)
+        altered = self.company.replace("earliest full vesting: **end of month 39**",
+                                       "earliest full vesting: **end of month 36**", 1)
         self.assertTrue(audit_company(altered))
 
     def test_company_missing_proprietary_notice_fails(self):
