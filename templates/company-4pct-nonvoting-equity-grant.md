@@ -41,7 +41,7 @@ The holder receives economic rights only as specified in the issued class: **no 
 
 ## 4. Service vesting and performance
 
-**Company award only:** a three-month qualifying cliff with **zero vested through the end of month 3**; then **1/36 of the original grant for each accepted qualifying month**, earliest full vesting **month 39**. The minimum requirement remains **three (3) accepted substantive contributions per month**. A missed month pauses qualifying installments, subject to the previously agreed notice/cure and exceptions. Vesting commences **[DATE]** and may not be backdated without lawful review.
+**Company award only:** a three-month qualifying cliff (**3-month initial cliff**) with **zero vested through the end of month 3**; then **1/36 of the original grant for each accepted qualifying month**, earliest full vesting **month 39**. The minimum requirement remains **three (3) accepted substantive contributions per month**. A missed month pauses qualifying installments, subject to the previously agreed notice/cure and exceptions. Vesting commences **[DATE]** and may not be backdated without lawful review.
 
 | End of qualifying month | Portion of original grant vested | Original fully diluted Company percentage points |
 | --- | ---: | ---: |
