@@ -30,7 +30,7 @@ Any separate public-release, distribution, or commercial license should identify
 
 ## 4. Independent naming and branding required
 
-Any independent fork must adopt its **own distinct project name and branding**. A Founding Engineer must not name, market, publish, or present an independent fork using **“Atto”**, **“AttoLang”**, names containing **“Atto”**, or confusingly similar names.
+Any independent fork must adopt its **own distinct project name and branding**. It **cannot use** the names “Atto” or “AttoLang” to brand itself. A Founding Engineer must not name, market, publish, or present an independent fork using **“Atto”**, **“AttoLang”**, names containing **“Atto”**, or confusingly similar names.
 
 Without the Project Owner's prior written permission, an independent fork must not use the Project's names, logos, visual identity, project domains, account identities, or other distinctive branding in:
 - its product, language, compiler, runtime, repository, organization, package, or distribution name;
