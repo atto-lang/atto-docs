@@ -1,0 +1,22 @@
+# Never place actual contributor identities, cap tables, signed contracts or payroll in this repo.
+# These are defense-in-depth patterns, not a security boundary: GitHub API uploads
+# and force-add can bypass .gitignore. Use independently permissioned legal storage.
+/private_records/
+/signed/
+/signed_agreements/
+/cap_tables/
+/payroll/
+/personnel/
+/real_registries/
+/secrets/
+/.credentials/
+*.pem
+*.p12
+*.pfx
+*.key
+.env
+.env.*
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
