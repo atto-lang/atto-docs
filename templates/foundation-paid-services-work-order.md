@@ -12,7 +12,7 @@ Use only after [independent approval](foundation-compensation-approval-record.md
 - Work order effective date / duration: **[REQUIRED]**
 - Classification (contractor vs employee): **[REQUIRED; reviewed by local counsel]**
 
-**Employment gate:** If the facts indicate employee status, **STOP** and use a separate legally compliant employment letter/payroll agreement with all mandatory wages, tax, benefits and labor protections. This contractor template cannot override actual worker classification or substitute for payroll.
+**Employment gate:** If the facts indicate employee status, **STOP** and use a separate legally compliant employment letter/payroll agreement with all mandatory wages, tax, benefits and labor protections. Foundation disinterested approval and a signed lawful agreement are required **before compensable services start**. Founding status grants **no automatic salary**. This contractor template cannot override actual worker classification or substitute for payroll.
 
 ## B. Services and evidence
 
