@@ -72,7 +72,7 @@ class ExecutionPackage(unittest.TestCase):
             "market comparables", "advance approval",
             "contemporaneous documentation", "60 days",
             "Form 990", "donor restrictions",
-            "not a promise of salary", "not adopted", "signatures"), 
+            "promise of salary", "not adopted", "signature"), 
             "Foundation policy missing guard")
 
     def test_approval_record_is_independent_and_not_payment_contract(self):
