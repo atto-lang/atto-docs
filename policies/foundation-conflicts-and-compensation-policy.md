@@ -22,7 +22,7 @@ An "interested person" is one with an actual or potential financial or decision-
 Before a material conflicted arrangement is entered into or material compensation is increased:
 
 1. The interested person discloses all relevant facts and may answer factual questions but **leaves during deliberation and voting** and cannot control or veto the outcome.
-2. A quorum of appropriately empowered **disinterested** directors or committee members determines whether the deal advances the charitable mission and is reasonable. If no eligible decision-makers remain, defer the transaction, obtain outside counsel and lawful board reconstitution/independent review as needed; **do not use an interested person's signature as substitute approval**.
+2. A quorum of appropriately empowered **disinterested** directors or committee members determines whether the deal advances the charitable mission and is reasonable. If no eligible decision-makers remain, **STOP — do not authorize payment**; defer the transaction, obtain outside counsel and lawful board reconstitution/independent review as needed; **do not use an interested person's signature as substitute approval**.
 3. The authorized body evaluates alternatives, total compensation across Foundation and related entities, proposed scope, market comparables, donor restrictions, budget sufficiency, and non-duplication of prior payments.
 4. Document affirmative findings, the votes and abstentions, any dissent, and why the consideration is no greater than fair value and serves charitable objectives.
 5. The Foundation executes the specific work order or IP license **only after** the independent approval, by an authorized unconflicted representative.
