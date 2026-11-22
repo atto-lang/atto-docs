@@ -53,7 +53,7 @@ If the Project Owner later releases specified AttoLang code under an open-source
 
 The permission to fork in this addendum conveys **no corporate or Foundation equity**, shareholder or member voting rights, board or trustee seats, manager or officer appointment powers, veto rights, or governance authority. No ownership or governance powers are implied by Founding Engineer status alone.
 
-Where a Founding Engineer separately enters into the AttoLang Founding Contributor Non-Voting Dual-Entity Ownership Agreement, any proposed **4% ownership award in AttoPL Co / Atto Co and conditional 4% ownership award in an equity-capable Atto Foundation** is intended to be **non-voting**, subject to the definitive legal instruments and any rights that cannot lawfully be waived. **A charitable nonprofit Foundation cannot issue ordinary private equity**, and a conditional Foundation equity proposal is not an already-issued ownership interest.
+Where a Founding Engineer separately signs the companion Founding Contributor Company Equity & Foundation Compensation Framework Agreement, the proposed **4% interest in AttoPL Co / Atto Co** is **non-voting** and governed by definitive Company equity documents. **Atto Foundation, if organized as a charitable 501(c)(3), does not issue private equity and has no 4% ownership award.** Any Foundation salary, service fee or IP royalty must arise from separately authorized and executed paid-work or genuine IP-license terms; founding status alone conveys **no ordinary Foundation voting rights, automatic salary, royalty, residuals or private distributions**.
 
 ## 8. Relationship to the main agreement
 
