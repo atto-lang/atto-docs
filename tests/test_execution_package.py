@@ -147,13 +147,6 @@ class ExecutionPackage(unittest.TestCase):
 
     def test_checklist_covers_security_and_execution(self):
         self.assertEqual([], missing(
-            self.checklist, "REQUIRED", "disinterested",
-            "tax", "charity", "securities", "employment",
-            "chain", "voting", "83(b)", "royalty",
-            "0.04", "three", "no Foundation shares",
-            "exact-source", "private", "signature",
-            "not a legal approval")[:0])  # overwritten below by stricter assertion
-        self.assertEqual([], missing(
             self.checklist, "disinterested", "related-party",
             "Form 1023/990", "Company", "Foundation", "tax",
             "conflict", "39", "3-month cliff", "no automatic", "restricted",
