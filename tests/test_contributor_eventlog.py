@@ -240,21 +240,47 @@ class SyntheticReviewEvents(unittest.TestCase):
             self.assertEqual(units, 1000)
             self.assertEqual((units*10000) // (base+n*units), 400)
 
-    def test_randomized_vesting_prefix_property(self):
+    def test_randomized_actual_registry_vesting_transitions(self):
         rng = random.Random(20261122)
-        for _ in range(100):
-            count = rng.randrange(0, 80)
+        for case_id in range(75):
+            count = rng.randrange(0, 70)
+            registry = deepcopy(self.registry)
             accepted = 0
-            for index in range(count):
-                outcome = rng.choice(["accept", "reject"])
-                if outcome == "accept":
-                    accepted += 1
-                # Vesting is monotonic, never exceeds 36, and three accepted
-                # months vest nothing. This checks arithmetic only, not identity.
-                expected = min(36, max(0, accepted-3))
-                self.assertGreaterEqual(expected, 0)
-                self.assertLessEqual(expected, 36)
-                self.assertEqual(expected, min(36, max(0, accepted-3)))
+            rows = []
+            for idx in range(count):
+                month = f"{2026 + idx // 12:04d}-{idx % 12 + 1:02d}"
+                decision = rng.choice(["accepted", "rejected"])
+                accepted += decision == "accepted"
+                rows.append({
+                    "month": month,
+                    "review": decision,
+                    "evidence_refs": [
+                        f"pr:random-case{case_id}-month{idx}-work{j}" for j in range(3)
+                    ] if decision == "accepted" else [],
+                    "reviewer_ref": "reviewer:independent-qa"
+                })
+            registry["grants"][0]["periods"] = rows
+            report = admin.validate_registry(registry)
+            result = report["awards"][0]["vesting"]
+            self.assertEqual(result["post_cliff_installments"],
+                             min(36, max(0, accepted-3)))
+            self.assertEqual(result["cliff_months_accepted"], min(3, accepted))
+            self.assertEqual(result["fraction_of_original_grant"],
+                             str(Fraction(min(36, max(0, accepted-3)), 36)))
+
+    def test_unhashable_event_kind_rejected_without_crashing(self):
+        self.submit("2026-01")
+        self.ledger["events"][0]["kind"] = ["ACCEPT"]
+        self.fails("unknown event kind")
+
+    def test_registry_symlink_input_is_denied(self):
+        with tempfile.TemporaryDirectory() as d:
+            real = Path(d) / "safe.json"
+            link = Path(d) / "alias.json"
+            real.write_text(json.dumps(self.registry), encoding="utf8")
+            link.symlink_to(real)
+            with self.assertRaisesRegex(admin.ContractValidationError, "symlinked"):
+                admin.load_registry(link)
 
 
 if __name__ == "__main__":
