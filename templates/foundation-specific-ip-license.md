@@ -31,7 +31,7 @@ Use only with [disinterested approval](foundation-compensation-approval-record.m
 - Amount/currency / maximum total amount or reasoned cap: **[REQUIRED]**.
 - If royalty-based, **exact licensed-IP transaction revenue base** and exclusions for returns/taxes/third-party fees, source data and unit definitions: **[REQUIRED]**.
 - Royalty rate: **[REQUIRED IF SELECTED, never a default 4%]**.
-- Appropriate independent fair-market valuation, comparables, date and assumptions: **[REQUIRED]**.
+- Appropriate independent fair-market valuation, comparables, date and assumptions: **[REQUIRED]**. The Foundation must document demonstrated fair-market value; **no double payment** for assigned or already compensated work. No royalty is presumed before the separately approved, signed license.
 - Reporting, frequency, invoices, payment due dates, withholding/tax and record-retention: **[REQUIRED]**.
 - Audit: records reasonably needed to verify the **specified licensed-IP transactions**, confidentiality, frequency, cost allocation and dispute resolution: **[REQUIRED]**.
 - Independent budget/funding source and restricted-donation compliance: **[REQUIRED]**.
