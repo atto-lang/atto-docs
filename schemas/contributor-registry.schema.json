@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/atto-lang/atto-docs/blob/main/schemas/contributor-registry.schema.json",
+  "title": "Synthetic Atto Non-Voting Contributor Grant Registry",
+  "description": "Planning and arithmetic only, never evidence of Company share issuance, foundation compensation, legal approval or signatures. External signed records are NOT stored in this repository. Application-level validation enforces integer 4% arithmetic, stage gates and reviewer/evidence rules.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "mode": {
+      "const": "simulation"
+    },
+    "stage": {
+      "enum": [
+        "DRAFT",
+        "READY_FOR_COUNSEL",
+        "APPROVED",
+        "EXECUTED"
+      ],
+      "description": "Repository CLI deliberately fails closed for APPROVED and EXECUTED. They are only meaningful in separately authenticated legal records."
+    },
+    "registry_ref": {
+      "type": "string",
+      "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+      "maxLength": 100
+    },
+    "company": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entity_ref": {
+          "type": "string",
+          "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+          "maxLength": 100
+        },
+        "non_voting_class_ref": {
+          "type": "string",
+          "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+          "maxLength": 100
+        },
+        "base_fully_diluted_units": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000000000000000
+        },
+        "grant_strategy": {
+          "enum": [
+            "simultaneous",
+            "sequential"
+          ]
+        }
+      },
+      "required": [
+        "entity_ref",
+        "non_voting_class_ref",
+        "base_fully_diluted_units",
+        "grant_strategy"
+      ]
+    },
+    "foundation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entity_ref": {
+          "type": "string",
+          "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+          "maxLength": 100
+        },
+        "ownership_bps": {
+          "const": 0
+        },
+        "nonprofit_status": {
+          "const": "intended_501c3_unverified"
+        },
+        "compensation": {
+          "const": "separate_approved_signed_services_only"
+        },
+        "royalties": {
+          "const": "specific_independently_valued_ip_license_only"
+        },
+        "voting_rights": {
+          "const": false
+        }
+      },
+      "required": [
+        "entity_ref",
+        "ownership_bps",
+        "nonprofit_status",
+        "compensation",
+        "royalties",
+        "voting_rights"
+      ]
+    },
+    "grants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "grant_ref": {
+            "type": "string",
+            "pattern": "^grant:[a-z0-9][a-z0-9._/-]{2,90}$",
+            "maxLength": 100
+          },
+          "contributor_ref": {
+            "type": "string",
+            "pattern": "^contrib:[a-z0-9][a-z0-9._/-]{2,90}$",
+            "maxLength": 100
+          },
+          "target_bps": {
+            "type": "integer",
+            "const": 400
+          },
+          "non_voting": {
+            "const": true
+          },
+          "proposed_units": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000000000000000
+          },
+          "start_month": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+          },
+          "periods": {
+            "type": "array",
+            "maxItems": 240,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "month": {
+                  "type": "string",
+                  "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+                },
+                "review": {
+                  "enum": [
+                    "accepted",
+                    "rejected",
+                    "pending"
+                  ]
+                },
+                "evidence_refs": {
+                  "type": "array",
+                  "maxItems": 20,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                    "maxLength": 100
+                  }
+                },
+                "reviewer_ref": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                      "maxLength": 100
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "month",
+                "review",
+                "evidence_refs",
+                "reviewer_ref"
+              ]
+            }
+          }
+        },
+        "required": [
+          "grant_ref",
+          "contributor_ref",
+          "target_bps",
+          "non_voting",
+          "proposed_units",
+          "start_month",
+          "periods"
+        ]
+      }
+    },
+    "counsel_packet_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entity_verification": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cap_table_draft": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "nonvoting_class_draft": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "outside_counsel_packet": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "authorized_signatory_plan": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "entity_verification",
+        "cap_table_draft",
+        "nonvoting_class_draft",
+        "outside_counsel_packet",
+        "authorized_signatory_plan"
+      ]
+    },
+    "legal_claims_verified": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "mode",
+    "stage",
+    "registry_ref",
+    "company",
+    "foundation",
+    "grants",
+    "counsel_packet_refs",
+    "legal_claims_verified"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "stage": {
+            "const": "READY_FOR_COUNSEL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "counsel_packet_refs": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "entity_verification": {
+                "type": "string",
+                "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                "maxLength": 100
+              },
+              "cap_table_draft": {
+                "type": "string",
+                "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                "maxLength": 100
+              },
+              "nonvoting_class_draft": {
+                "type": "string",
+                "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                "maxLength": 100
+              },
+              "outside_counsel_packet": {
+                "type": "string",
+                "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                "maxLength": 100
+              },
+              "authorized_signatory_plan": {
+                "type": "string",
+                "pattern": "^(entity|class|grant|contrib|reviewer|pr|issue|commit|ci|doc|cap|counsel|board|signature|ledger|ip):[a-z0-9][a-z0-9._/-]{2,90}$",
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "entity_verification",
+              "cap_table_draft",
+              "nonvoting_class_draft",
+              "outside_counsel_packet",
+              "authorized_signatory_plan"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
