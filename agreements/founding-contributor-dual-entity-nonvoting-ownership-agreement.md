@@ -1,163 +1,112 @@
 # ATTO FOUNDATION / ATTOPL CO
 
-## FOUNDING CONTRIBUTOR NON-VOTING DUAL-ENTITY OWNERSHIP & PERFORMANCE AGREEMENT
+## FOUNDING CONTRIBUTOR COMPANY EQUITY & FOUNDATION COMPENSATION FRAMEWORK AGREEMENT
 
-**Version:** 0.3 (proposed revision to linked v0.2 draft)  
+**Version:** 0.4 (proposed revision; supersedes draft v0.3, not any executed instrument)  
 **Date:** November 22, 2026  
-**Status:** DRAFT FOR LEGAL REVIEW — not executable until the entity and share-class conditions described below are satisfied. Not a public license.
+**Status:** DRAFT FOR LEGAL REVIEW — Company equity is not issued by this draft. Foundation compensation must be separately approved and contracted. Not a public license.
 
 ### PARTIES AND CONDITIONS PRECEDENT
 
-This Founding Contributor Agreement ("Agreement") is proposed between:
+This proposed Founding Contributor Agreement ("Agreement") is between:
 
-- **Founder:** [Full legal name]
-- **Commercial Entity:** [AttoPL Co / Atto Co — select the actual incorporated entity, legal form, jurisdiction and registration number] ("Company")
-- **Foundation Entity:** [Atto Foundation — specify actual legal entity, legal form, jurisdiction and registration number] ("Foundation")
-- **Founding Contributor:** [Full legal name] ("Contributor")
-- **Effective Date:** [Date]
+- **Founder:** [Full legal name].
+- **Commercial Entity:** [AttoPL Co / Atto Co — actual incorporated entity, legal form, jurisdiction, registration] ("Company").
+- **Founding Contributor:** [Full legal name] ("Contributor").
+- **Effective Date:** [Date of authorized execution].
+- **Related charitable entity, not an equity issuer or party here:** [Atto Foundation — actual legal name, form and jurisdiction] ("Foundation").
 
-The Founder, Company and Foundation are each bound only upon valid authorization and execution by that party. A proposed entity not yet formed cannot issue ownership. Prior to any grant, the parties must verify corporate authority, approved capital structure, governing documents, tax and securities treatment, and execute legally sufficient definitive equity documents.
+The parties' intent is **4.00% non-voting Company equity at lawful grant**, subject to the three-month cliff and 36 monthly installments, **not 4% of Foundation ownership**. The Foundation is intended to remain a charitable nonprofit under IRC 501(c)(3). Founding contributors may instead negotiate paid-service and genuine IP-license arrangements with the Foundation under the separate [Foundation compensation and IP royalties agreement](foundation-founding-contributor-compensation-and-ip-royalties.md). No Foundation payment is owed under this Company equity instrument.
 
-**Important Foundation condition:** The original linked agreement described Atto Foundation as a charitable nonprofit. A charitable nonprofit cannot grant the Contributor a 4% private equity or profit ownership stake. A promise to create such an interest is conditional on the Foundation becoming or being organized as a lawfully equity-capable, non-charitable entity (or on the parties signing an expressly agreed alternative structure that actually satisfies the Contributor's dual-entity ownership objective). Non-voting membership in a nonprofit does **not** equal 4% equity, and is not a unilateral substitute for the promised ownership. No Foundation equity is represented as issued, vested, or currently available while this structural condition remains unmet. **Do not execute this as a completed dual-equity grant until the Foundation's legal structure is resolved.**
-
-The parties intend the Contributor's economic stake to be **4.00% at initial issuance in EACH eligible entity**, with **no ordinary voting or management rights**. They recognize nonwaivable statutory rights may remain.
-
----
+The Founder and Company must identify the correct entity, share class, fully diluted capitalization, lawful grant instrument, tax/securities conditions, and actual authorized signatures before representing any shares as issued. **An unsigned or unexecuted draft does not itself create or transfer an ownership interest.**
 
 ---
 
 # ARTICLE 1 — ORGANIZATIONAL STRUCTURE
 
-### 1.1 Atto Foundation — dual-ownership intent and required legal structure
+### 1.1 Atto Foundation — charitable nonprofit
 
-The Foundation's anticipated activities include stewardship of the Atto language ecosystem, compiler and distributed-systems research, specifications, education, documentation, community collaboration and events.
+Atto Foundation is intended as a legally separate charitable 501(c)(3) nonprofit supporting language and compiler research, educational specifications, documentation, community work and other lawful charitable purposes.
 
-The parties expressly intend the Contributor to hold a separate, **four percent (4.00%) non-voting economic ownership interest in Atto Foundation itself**, **if and only if** the Foundation is legally organized and authorized to issue such ownership. It must not be treated as a charitable 501(c)(3) entity issuing private stock. If preserving charitable nonprofit status is essential, this term cannot be fulfilled as written; counsel and the parties must resolve the incompatibility and execute a replacement, without treating nonprofit membership, a board title or a donation entitlement as 4% ownership.
+**The Foundation has no privately issued shares or 4% equity ownership award for the Contributor.** It must not distribute net earnings or charitable assets for private benefit. It may separately engage the Contributor to provide bona fide services for independently approved reasonable compensation, or enter into legitimate arm's-length IP licenses where the Contributor retains an actual intellectual-property right. The separate Foundation contract does not grant salary, royalties or residuals automatically.
 
-The Founder will use commercially reasonable efforts to obtain and document an implementable structure. No party is required to violate nonprofit law or distribute charitable assets to private interests.
+### 1.2 AttoPL Co / Atto Co — for-profit Company
 
-### 1.2 AttoPL Co / Atto Co — commercial entity
+The Company is the designated commercial holding or operating entity for Atto-related proprietary compiler/runtime licensing, developer tools, hosting, enterprise support, AI infrastructure and other commercial ventures. The definitive legal name must be completed in Schedule D.
 
-The Company is the designated for-profit commercial holding or operating company for Atto-related proprietary compiler/runtime licensing, tools, hosting, cloud/edge services, enterprise support, AI infrastructure, and other commercial ventures. Its definitive legal name is to be completed above.
+### 1.3 Arm's-length relationship and cross-entity independence
 
-### 1.3 Separate entities and arm's-length dealings
+The Company and Foundation remain distinct. Any inter-entity licenses, personnel arrangements, grants, reimbursements, or transfer of intellectual property must have independent approval, a lawful purpose, and appropriate conflict and fair-market reviews. Neither Company equity nor Foundation contributor status transfers ownership of the other entity or its assets.
 
-The entities remain legally distinct. Any inter-entity IP licenses, asset transfers, service agreements or funding arrangements require lawful authority, appropriate conflict-of-interest review and documentation. Restricted charitable grants or donations must never be diverted to private owners.
+### 1.4 Proprietary status and name rights
 
-### 1.4 Proprietary status
-
-AttoLang is presently proprietary, not generally open source. Nothing in this Agreement grants the Contributor or the public a general license to disclose, publicly fork, redistribute, sublicense, or commercialize confidential source code. Separately granted founding-engineer fork rights remain governed by their own agreement; an independent fork cannot use the “Atto” or “AttoLang” names without written permission.
+AttoLang is presently proprietary, not open source. No public right to disclose, sublicense, redistribute or commercialize proprietary source code is implied. Any separately granted founding-engineer private-fork right remains subject to the "Atto" and "AttoLang" naming prohibition.
 
 ---
 
-# ARTICLE 2 — FOUR PERCENT NON-VOTING OWNERSHIP IN EACH ENTITY
+# ARTICLE 2 — FOUR PERCENT NON-VOTING COMPANY EQUITY ONLY
 
-### 2.1 Separate 4% grants, not a shared 4% pool
+### 2.1 Company award
 
-Subject to authorized issuance and vesting:
+Subject to authorization, legal issuance and service vesting, the Company shall arrange for the Contributor to receive **4.00% of its fully diluted equity at the grant date**, in a **non-voting** class of shares or membership units documented in Schedule D and definitive instruments. The fully diluted denominator includes outstanding capital and agreed as-converted/as-exercised interests and incentive pool, consistently defined in the signed capitalization schedule.
 
-1. **Company grant:** the Company shall issue or contractually commit to issue a **4.00%** interest in the Company's **fully diluted equity at the grant date**, in a **non-voting** class of shares or membership units.
-2. **Foundation grant (conditional):** if the Foundation is legally equity-capable as required by Article 1, the Foundation shall separately issue or commit to issue a **4.00%** interest in the Foundation's **fully diluted equity at its grant date**, in a **non-voting** class of shares or membership units.
+This is **one 4% award in AttoPL Co / Atto Co**, **not 4% of the Foundation**, and not an automatic direct stake in each commercial subsidiary.
 
-Each 4% figure refers to **that entity's own capitalization**, not to a combined 4% stake, and neither grant substitutes for or offsets the other. The grant amount, equity instrument, class rights, fully diluted denominator and incentive pool must be set out in a signed cap table (Schedule D) and definitive instruments. Neither grant is an automatic 4% stake in each subsidiary or asset.
+### 2.2 Non-voting; no governance power
 
-### 2.2 Non-voting economic rights; no control
+The Company interest conveys **no ordinary voting rights**, board/director appointment, manager authority, ordinary veto, business-management control, or right to bind the Company. Nonwaivable statutory minority-holder, class-vote or other rights remain if applicable; no provision waives rights that cannot lawfully be waived. The actual governing documents must establish a valid non-voting class.
 
-Both awards must be structured to convey economic ownership **without ordinary voting rights**. The Contributor shall have no ordinary votes for directors, trustees, governors, officers, managers, mergers or routine corporate matters; no board or committee seat; no appointment or removal power; no veto or consent powers over management; and no right to bind either entity solely by virtue of this Agreement.
+The Foundation relationship similarly confers **no ordinary voting or trustee authority**, but is neither Company equity nor Foundation ownership.
 
-Applicable law may require a non-voting class vote or afford mandatory shareholder/member remedies in exceptional circumstances. **No clause purports to waive nonwaivable statutory rights.** The charter, articles, bylaws, operating agreement, class designation, shareholders' agreement and subscription/grant documents must implement non-voting status to the maximum extent lawful. The parties shall not describe a merely advisory or nonprofit membership as ownership.
+### 2.3 Economic interest, distributions and dilution
 
-### 2.3 Economic rights attach only to equity
+Any dividends, lawful shareholder distributions, liquidation proceeds or sale proceeds are governed solely by the actual Company equity class and definitive instruments. No payout is guaranteed. The Company 4% is measured at the initial lawful grant and may be diluted through authorized financings or other capital changes unless separately protected by written agreement.
 
-Subject to the applicable class rights and law, vested equity may participate in lawfully declared dividends or distributions, sale proceeds and liquidation proceeds in accordance with the actual equity instruments. **No extra percentage of gross revenue, net receipts, donations or Foundation assets is promised.** No dividend or distribution is guaranteed.
+### 2.4 Covered commercial ventures; no Foundation assets
 
-### 2.4 Covered ventures and anti-circumvention
+The intended economic scope of Company equity includes the Company's lawful direct or indirect interests in Atto-related commercial activities. The Company and Founder shall not deliberately reallocate commercial assets for the primary purpose of frustrating lawfully vested shareholder rights. This does **not** confer a claim to Foundation funding, IP, restricted donations, or charitable assets.
 
-The parties intend these ownership stakes to expose the Contributor economically to the respective entity's interests in Atto compiler products, backends, runtimes, infrastructure, hosting, developer tooling, intellectual-property commercialization, and future subsidiaries or successor businesses. Such interests are economic only and do not give direct ownership of assets held by subsidiaries.
+### 2.5 Protection of actually vested interests
 
-Neither the Founder nor the respective issuing entity shall knowingly transfer or relabel assets for the primary purpose of defeating lawfully vested economic interests. This provision does not permit diversion of nonprofit property or override bona fide arms-length transactions.
+Issued and vested equity is not automatically revoked solely because future contributions stop, subject to applicable law and negotiated transfer, repurchase and forfeiture terms. Options with an exercise cost cannot silently replace actual equity grants without the Contributor's written agreement.
 
-### 2.5 Dilution and vested protection
+### 2.6 Company equity legal-issuance gate
 
-Each 4% award is measured at its lawful grant date, not guaranteed against future financing dilution. The Contributor is not entitled to automatic anti-dilution, special consent or governance rights. Once legally issued and vested, interests are not forfeited solely for stopping future contributions, subject to agreed, lawful repurchase/transfer provisions. Any option exercise price or substitution with options instead of actual units requires the Contributor's express written agreement.
+**No reference to 4%, signature on a draft, service credit, accepted PR or milestone establishes that Company shares already exist or are issued.** The Company must confirm authorization, exact non-voting share class and count, fully diluted cap table, securities and tax compliance, applicable wage-law constraints, and completed definitive equity instruments before stating that ownership has been granted.
 
-### 2.6 Foundation issuance blocker
+### 2.7 Separate Foundation compensation — no residual percentage
 
-Until the Foundation is lawfully able to issue 4% private non-voting equity, **the Foundation grant is pending and cannot legally be completed or represented as vested ownership**. Vested service credits under Article 3 shall be tracked separately as a contingent contractual commitment, subject to a mutually signed lawful issuance structure. There is no automatic conversion into nonprofit shares, charitable donation rights, foundation profits or voting membership. The Foundation and Contributor must sign a legally compliant amendment before issuance; if no such solution can be agreed, the parties must negotiate the unresolved Foundation award in good faith rather than deem it satisfied.
+The Foundation is **not an equity issuer under this Agreement**. Its separate founding-contributor compensation agreement permits a right to **submit paid-work proposals for independent review**, and enforceable payment for services under an approved signed work order or employment agreement. A separate legitimate IP license may provide reasonable royalties where the Contributor genuinely controls specified IP and the Foundation independently approves the license in advance.
 
-
-### 2.7 Issuance and legal-approval gate
-
-**No signature on this draft, service credit, acceptance of contributions, or reference to a percentage is proof that shares have been issued.** Before either award is represented as issued or vested, counsel and the authorized representatives must approve: (a) the actual entity names and legal forms; (b) the non-voting class terms, lawful protective class votes, and signed capitalization schedules; (c) the specific grant instrument and number of shares/units; (d) corporate approvals, securities and tax compliance, and any applicable wage obligations; and (e) issuance or permitted conditional service credits. An equity award must be evidenced by definitive instruments and the relevant company records.
-
-If the Foundation remains a charitable nonprofit, it must not issue ordinary private economic equity or distribute net earnings to contributors. The parties must make and document a lawful structural decision **before** describing any Foundation interest as ownership.
-
+Neither this agreement nor founding status grants a **4% Foundation revenue share**, a default royalty, a fixed percentage of donations, or a unilateral right to demand a salary. The Foundation's charity-law, tax, wage-law and conflict-of-interest obligations govern.
 
 ---
 
-# ARTICLE 3 — THREE-MONTH CLIFF AND 36-MONTH VESTING
+# ARTICLE 3 — THREE-MONTH CLIFF AND 36-MONTH COMPANY EQUITY VESTING
 
-### 3.1 Vesting Structure
+### 3.1 Vesting schedule
 
-Each separately authorized award (Company and, conditionally, Foundation) shall follow the same service-vesting schedule, without creating unissued Foundation shares. The Contributor's eligible awards shall be subject to:
+The Company's original 4% award, once lawfully granted, follows **three (3) qualifying months with no equity vested**, followed by **thirty-six (36) qualifying monthly installments**, one thirty-sixth (1/36) of the grant per installment. Earliest full vesting: **end of month 39** from the Vesting Commencement Date, subject to accepted performance under Article 4.
 
-**An initial three (3) month cliff, followed by thirty-six (36) monthly vesting installments.**
+### 3.2 Vesting examples (before later dilution)
 
-The earliest full-vesting date is therefore **39 months after the Vesting Commencement Date**.
+| End of month | Portion of 4% grant vested | Original fully diluted Company percentage points |
+| --- | ---: | ---: |
+| 3 (cliff completed) | 0% | 0.0000% |
+| 4 | 2.7778% | 0.1111% |
+| 15 | 33.3333% | 1.3333% |
+| 27 | 66.6667% | 2.6667% |
+| 39 | 100% | 4.0000% |
 
-### 3.2 Initial Cliff
+These calculations concern **Company equity only**. They do not vest Foundation shares, salary, royalties, deferred payments, or charitable assets.
 
-During the initial three months, the Contributor must meet the performance requirements of Article 4.
+### 3.3 Monthly qualification, cure and pause
 
-No equity vests during the cliff period.
+Every vesting month requires three substantive accepted contributions recorded under Article 4, compliance with project rules, and an eligible relationship. A missed month ordinarily pauses future installments, not already issued vested interests, and extends remaining vesting subject to applicable notice/cure and legitimate exceptions.
 
-Successful completion of three qualifying months satisfies the cliff requirement but does not itself immediately vest an installment.
+### 3.4 Separation and termination
 
-The first monthly installment vests upon successful completion of the first qualifying monthly vesting period after the cliff.
-
-### 3.3 Monthly Vesting
-
-After completing the cliff, the Contributor shall become eligible to vest one thirty-sixth (1/36) of the original award for each qualifying monthly period.
-
-The ordinary schedule is:
-
-| Milestone                 | Portion of award vested |
-| ------------------------- | ----------------------- |
-| Month 3 — Cliff completed | 0%                      |
-| Month 4                   | 2.7778%                 |
-| Month 15                  | 33.3333%                |
-| Month 27                  | 66.6667%                |
-| Month 39                  | 100%                    |
-
-The percentages above represent the portion of the original award that has vested. For a legally issued **4.00%** award in a single entity, one 1/36 installment equals approximately **0.111111 percentage points** of that entity's original fully diluted capitalization (before later dilution). At month 4 the accrued award is approximately **0.1111% of the entity**; at month 15, **1.3333%**; at month 27, **2.6667%**; and at month 39, **4.0000%**. These examples are not additional awards or anti-dilution rights. For the Foundation, these are only prospective service-credit illustrations until its legal issuance conditions are satisfied.
-
-Once a legally issued award fully vests, the Contributor earns the entire originally granted **4% interest in that issuing entity**, subject to lawful dilution. For any blocked Foundation grant, service credits are tracked but do not amount to current Foundation ownership.
-
-### 3.4 Conditions
-
-Each monthly installment is conditional upon:
-
-- Meeting the minimum contribution requirement.
-- Submitting qualifying work through the agreed tracking process.
-- Complying with applicable project security and contribution policies.
-- Remaining in an eligible contributor relationship during that vesting period.
-
-### 3.5 Missed Months
-
-A month that does not satisfy the agreed performance criteria shall ordinarily result in a vesting pause rather than immediate forfeiture of previously vested equity.
-
-The Contributor shall be informed of the shortfall and given a reasonable opportunity to cure it under Article 4.
-
-A missed qualifying month extends the remaining vesting schedule by one month unless the deficiency is cured or an exception is approved.
-
-### 3.6 Departure
-
-When the contributor relationship ends:
-
-- Previously vested equity remains vested.
-- Future vesting stops.
-- Unvested equity becomes subject to forfeiture or repurchase under the definitive equity documents.
-- Any lawfully declared and unpaid equity distributions remain governed by the definitive equity documents and applicable law.
+On departure, issued vested Company equity remains subject to its definitive legal instruments; future vesting stops; unvested interests follow enforceable forfeiture or repurchase terms. An executed Foundation paid-work or IP license agreement independently governs payment for already earned amounts. Foundation contributor status does **not** vest an automatic royalty or compensation right.
 
 ---
 
@@ -360,23 +309,23 @@ Nothing in this Article waives reimbursement or other protections required by ap
 
 ---
 
-# ARTICLE 6 — OWNERSHIP-ONLY ECONOMICS; NO CONTRACTUAL REVENUE SHARE
+# ARTICLE 6 — COMPANY EQUITY ECONOMICS; NO AUTOMATIC FOUNDATION PAYMENT
 
-### 6.1 Ownership rather than receipts participation
+### 6.1 Company equity and no extra revenue share
 
-The Contributor receives the conditional **4% non-voting equity interests** set forth in Article 2, not a separate contractual right to a fixed percentage of gross revenue, net revenue, royalties, cash receipts, Foundation donations, or subsidiary receipts.
+The Contributor's commercial economic entitlement is the lawfully granted **4% non-voting Company equity** under Article 2. There is no additional percentage of Company gross receipts, net income, royalties, subscriptions, subsidiaries or sales unless another separately signed and authorized agreement expressly provides it.
 
-### 6.2 Dividends, profits and liquidity events
+### 6.2 Foundation has no private residual/distribution plan
 
-Any dividends, distributions, participation in exit proceeds and liquidation preferences arise solely under the issued equity class and applicable governing instruments. Payment is subject to applicable corporate and nonprofit law, authorized declarations, the actual equity waterfall, tax withholding and other lawful restrictions. Neither entity guarantees periodic payments, revenue shares or a salary through this provision.
+The Foundation does not issue equity and cannot distribute its charitable net earnings as private shareholder residuals. No fixed share of Foundation donations, grants, gross receipts, net income or surplus is owed because of founding-contributor status.
 
-### 6.3 No private Foundation inurement
+### 6.3 Independent approved compensation or IP licensing
 
-No provision authorizes distributions of charitable Foundation earnings, restricted donations or charitable assets to the Contributor. The Foundation's conditional equity interest cannot be implemented unless its legal form permits such ownership.
+**Salary, contractor fees, or a bona fide IP-license royalty** may be owed from the Foundation **only** under a separately signed, independently approved employment/work-order or IP-license arrangement (or as required by mandatory law). Compensation must be reasonable for actual services or valid rights provided, not a proxy for insider profit distributions. The companion Foundation contract governs, including approved amounts already earned and their survivability.
 
-### 6.4 Preservation of vested economic rights
+### 6.4 No voting control
 
-A lawful reorganization or successor transaction must respect issued vested interests under the governing instruments and applicable law. The Contributor has **no ordinary governance, veto or consent rights** by virtue of this clause, except mandatory statutory rights.
+Neither Company equity nor Foundation compensation eligibility confers ordinary voting or management authority. Mandatory statutory exceptions remain.
 
 ---
 
@@ -410,7 +359,7 @@ The Founder or authorized Company management may, but is not obligated to, award
 
 ### 7.3 Conferences and Public Speaking
 
-The Company may compensate a Contributor for presenting an approved Atto-related talk, training course, workshop, demonstration, or conference presentation.
+The Company may compensate a Contributor for presenting an approved Atto-related talk, training course, workshop, demonstration, or conference presentation. A Foundation engagement for such activity requires its own separately approved agreement.
 
 Such compensation may include a speaking fee, honorarium, sponsorship payment, travel reimbursement, or other benefit.
 
@@ -426,31 +375,25 @@ Any bonus or special compensation shall be documented separately and shall not a
 
 # ARTICLE 8 — INTELLECTUAL PROPERTY
 
-### 8.1 Atto Project Work
+### 8.1 Commercial project work
 
-Subject to applicable law and specifically documented exceptions, intellectual property created by the Contributor within the scope of assigned Atto commercial work shall be assigned or licensed to the designated Atto entity under the applicable contributor or invention-assignment agreement.
+Subject to law and documented exclusions, IP arising from assigned commercial work is assigned or licensed to the entity designated by a signed work-product or invention-assignment agreement. A Company equity interest does not automatically make the Contributor the owner of Company or Foundation IP.
 
-### 8.2 Foundation Work
+### 8.2 Foundation work and separately retained IP
 
-Foundation-associated work is governed by the relevant intellectual-property and contributor agreements. Until an explicit open-source release is authorized, AttoLang source code remains proprietary. The Foundation's proposed equity grant creates no right to divert charitable assets or override a third party's license.
+Foundation-associated work must be governed by its written service and IP documents. **No royalty may arise merely because the Contributor created work already assigned to, or paid for by, the Company or Foundation**. A royalty requires a separately owned/licensed right, documentary chain of title, fair-value terms and advance disinterested approval under the [separate Foundation agreement](foundation-founding-contributor-compensation-and-ip-royalties.md).
 
-### 8.3 Preexisting Work
+### 8.3 Pre-existing work
 
-The Contributor retains rights to independently developed or preexisting intellectual property unless separately assigned or licensed.
+Rights to properly disclosed and independently developed pre-existing IP remain with their rightful owner unless validly assigned or licensed. Disclosures belong in Schedule C.
 
-Material preexisting technology shall be disclosed in Schedule C.
+### 8.4 AI assistance, licensing and confidentiality
 
-### 8.4 AI-Generated Material
+Contributors must assess provenance, avoid knowingly incorporating unauthorized third-party IP, and comply with private-source confidentiality restrictions when using AI tools.
 
-The Contributor shall exercise reasonable care to verify that AI-assisted contributions do not knowingly violate third-party rights, software licenses, or confidentiality obligations.
+### 8.5 Patents, brands and commercial IP
 
-### 8.5 Patents and Commercial IP
-
-The Company may commercialize eligible intellectual property through licensing, services, transfers, or other lawful arrangements.
-
-The Company is not required to pursue patents.
-
-Any patent-related revenue rights are governed by Article 6 and applicable law.
+The Company may commercially license eligible IP according to its agreements. It is not required to seek patents. AttoLang remains proprietary until expressly released under a valid public license; use of the "Atto" and "AttoLang" names is separately restricted.
 
 ---
 
@@ -472,47 +415,43 @@ Serious misconduct may justify suspension of system access or termination, subje
 
 # ARTICLE 10 — MANAGEMENT AND GOVERNANCE
 
-### 10.1 Management Authority
+### 10.1 Company authority
 
-The Founder and authorized Company management retain responsibility for ordinary business operations, subject to governing corporate documents and applicable law.
+The Founder and duly authorized Company representatives manage commercial operations under applicable governing instruments, law and fiduciary obligations.
 
-### 10.2 Contributor Rights
+### 10.2 No ordinary voting or control
 
-The Contributor may propose technical, commercial, and organizational improvements.
+The **4% Company equity class is non-voting**. The Contributor receives no ordinary votes, board/director seat, manager-election authority, veto right, or power to bind the Company by virtue of the award, except statutory rights that may not be waived.
 
-Neither 4% award conveys any ordinary voting right, board/trustee seat, director/manager election right, governance veto, control over the Company or Foundation, or authority to bind either entity. No election, amendment, or corporate matter may be voted upon using the awards except to the extent a class vote is nonwaivably required by law.
+The Foundation has **no Contributor ownership interest**. It retains independent charity governance, and no Contributor may approve their own salary, royalty, grant, hiring or budget decisions.
 
-### 10.3 Protection Against Unilateral Changes
+### 10.3 Protection against unilateral reduction
 
-The Company may update contribution guidelines prospectively through a reasonable, transparent process.
-
-However, material reductions to the original equity award, accrued vesting, or vested economic rights require the Contributor's written agreement or another lawful basis expressly established in the governing instruments.
+Prospective contribution guidelines may be updated through a reasonable and transparent process. Material changes to a granted Company award, already earned vesting or separately executed payment rights must comply with applicable law and definitive instruments; no retroactive deprivation of legally earned wages is permitted.
 
 ---
 
 # ARTICLE 11 — TERMINATION
 
-### 11.1 Voluntary Departure
+### 11.1 Voluntary departure
 
-The Contributor may terminate active participation by giving 14 days' written notice.
+The Contributor may stop active commercial contributions on 14 days' notice, subject to mandatory law and any separately agreed terms.
 
-### 11.2 Company Termination
+### 11.2 Company termination
 
-The Company may terminate the active relationship for legitimate business reasons, sustained failure to meet contribution requirements, serious misconduct, or other lawful grounds.
+The Company may end the relationship for legitimate reasons, material breaches or sustained uncured performance deficiencies consistent with Article 4 and law.
 
-### 11.3 Performance Notice
+### 11.3 Performance process
 
-Ordinary performance deficiencies shall be subject to the notice-and-cure process described in Article 4 before termination for persistent underperformance.
+Ordinary insufficient contributions are subject to Article 4 notice and cure prior to a performance-based termination where applicable.
 
-### 11.4 Vested Rights
+### 11.4 Vested Company equity and separately earned Foundation payments
 
-Termination does not automatically cancel legally issued and vested equity or lawfully declared unpaid equity distributions. Conditional Foundation service credits remain subject to Article 2.6 and the mutually agreed lawful structure.
+Termination does not by itself cancel validly issued vested Company equity or lawfully declared unpaid equity distributions. Any Foundation wages, approved work-order fees or IP royalties already owed under an **independently executed** Foundation agreement remain governed by that agreement and mandatory law. There is no Foundation equity interest or vested Foundation residual percentage to preserve.
 
-Unvested interests shall be handled under the definitive equity documents.
+### 11.5 Survival
 
-### 11.5 Surviving Obligations
-
-Applicable confidentiality, intellectual-property, vested equity rights, outstanding lawful equity-distribution claims, dispute-resolution, and other expressly surviving provisions remain effective.
+Applicable confidentiality, IP ownership, vested Company rights, separately signed payment obligations, dispute-resolution and other lawful surviving terms remain effective.
 
 ---
 
@@ -520,7 +459,7 @@ Applicable confidentiality, intellectual-property, vested equity rights, outstan
 
 ### 12.1 Independent Legal Compliance
 
-The Parties acknowledge that equity compensation, conditional dual-entity grants, and contractor relationships may be subject to securities, tax, employment, and other applicable laws.
+The Parties acknowledge that Company equity, Foundation compensation and royalties, and contributor arrangements may be subject to securities, tax, charity, employment, and other applicable laws.
 
 ### 12.2 Worker Classification
 
@@ -550,7 +489,7 @@ Material changes must be agreed in writing by the affected Parties.
 
 ### 12.6 Definitive Equity Documents
 
-Equity issuance, fully diluted capitalization, non-voting share or unit classes, vesting repurchase terms, mandatory statutory rights, and transfer restrictions must be implemented through legally approved instruments consistent with this Agreement. If Foundation equity is unavailable under the chosen nonprofit structure, no grant is deemed issued; Article 2.6 applies.
+Company equity issuance, fully diluted capitalization, non-voting share or unit classes, vesting and repurchase terms, mandatory statutory rights, and transfer restrictions require appropriate executed corporate instruments. **Foundation compensation and IP royalties instead require a separate signed Foundation agreement and approved paid engagement or license. No Foundation equity is issued or contemplated.**
 
 ---
 
@@ -625,39 +564,25 @@ This is a non-exhaustive description of potential business operations only. **It
 
 # SCHEDULE B — CONTRIBUTION PLAN
 
-**Contributor Name:** [Name]
+**Contributor Name:** [Name]  
+**Primary Technical Track:** [Area]  
+**Company Vesting Commencement Date:** [Date]  
+**Initial Company Cliff:** Three qualifying months.  
+**Company Post-Cliff Vesting:** 36 qualifying monthly installments.  
+**Earliest Company Full Vesting:** End of month 39.  
+**Minimum Monthly Contributions:** Three accepted substantive contributions.  
+**Company Non-Voting Equity Target:** **4.00%** of Company's fully diluted equity at lawful issuance.  
+**Foundation Ownership:** **None — charitable nonprofit, no shares or 4% residual stake.**  
+**Foundation Compensation:** Only under separately approved and executed employment/work-order or IP-license agreements.  
+**Foundation Default Royalty / Salary Guarantee:** **None.**  
+**Ordinary Voting / Board / Manager Rights:** None, subject to nonwaivable laws.  
+**Additional Company Contractual Revenue Share:** None.  
+**Reviewing Maintainer:** [Name or role]  
+**Initial Assignments:** [Three approved initial tasks]  
+**Contributions Tracking:** GitHub PRs/issues, accepted tests, verified engineering deliverables, or approved milestones.  
+**Special Exceptions:** [Details]
 
-**Primary Technical Track:** [Area]
-
-**Vesting Commencement Date:** [Date]
-
-**Initial Cliff:** Three qualifying months.
-
-**Post-Cliff Vesting:** 36 qualifying monthly installments.
-
-**Earliest Full Vesting:** End of month 39.
-
-**Minimum Monthly Contributions:** Three accepted substantive contributions.
-
-**Company Grant Target:** 4.00% of fully diluted non-voting equity at lawful issuance.
-
-**Foundation Grant Target:** separate 4.00% of fully diluted non-voting equity **only if** an equity-capable Foundation structure is lawfully established. Pending otherwise.
-
-**Ordinary Voting / Board / Manager Rights:** None.
-
-**Additional Contractual Revenue Share:** None.
-
-**Initial Assignments:**
-
-1. [Assignment]
-2. [Assignment]
-3. [Assignment]
-
-**Contribution Tracking:** GitHub issues, pull requests, accepted technical deliverables, or other approved records.
-
-**Reviewing Maintainer:** [Name or role]
-
-**Special Agreements or Exceptions:** [Details]
+The Company's 39-month vesting is **not** a 39-month vesting of Foundation payment rights.
 
 ---
 
@@ -667,29 +592,23 @@ This is a non-exhaustive description of potential business operations only. **It
 
 ---
 
-# SCHEDULE D — ENTITY STRUCTURE, NON-VOTING CLASSES, AND CAPITALIZATION (TO BE COMPLETED BEFORE EXECUTION)
+# SCHEDULE D — COMPANY CAPITALIZATION AND SEPARATE FOUNDATION STATUS (COMPLETE BEFORE EXECUTION)
 
-**Company legal name and jurisdiction:** [TBD]
+**Company legal name, jurisdiction and registration:** [TBD]  
+**Company capitalization date and fully diluted denominator:** [TBD]  
+**Non-voting class and authorized shares/units:** [TBD]  
+**4% grant share count or units and vesting instrument:** [TBD; attach signed cap table]  
+**Company board/manager authorizations:** [TBD]  
+**Nonwaivable shareholder and class rights:** [TBD by jurisdiction]  
+**Securities, employment and tax counsel review:** [TBD]  
+**Foundation legal name, form and 501(c)(3) status:** [TBD — do not assert IRS recognition without evidence]  
+**Foundation economic ownership or revenue percentage:** **None**  
+**Separate Foundation compensation agreement executed:** [Yes / No; date; link]  
+**Foundation disinterested compensation approval and comparator evidence:** [Required for each paid engagement]  
+**IP title and licensing approval:** [Required before any Foundation royalty]  
+**Authorized Company representatives:** [TBD]
 
-**Company legal form / capitalization date:** [TBD]
-
-**Company non-voting equity class and 4% fully diluted calculation:** [TBD; attach board approvals and capitalization table]
-
-**Foundation legal name and jurisdiction:** [TBD]
-
-**Foundation legal status:** [charitable nonprofit / non-charitable equity-capable entity / other — specify]
-
-**If charitable nonprofit, Foundation 4% equity grant cannot be implemented:** [Counsel-approved lawful restructuring and executed amendment required]
-
-**Foundation non-voting equity class and 4% fully diluted calculation (only if lawful):** [TBD]
-
-**Common vesting commencement and contribution plan:** [TBD]
-
-**Statutory shareholder/member rights that cannot be waived:** [TBD by jurisdiction]
-
-**Representatives authorized to execute:** [TBD]
-
-**Counsel / tax / labor-law review completed:** [TBD]
+**This Company equity agreement does not issue shares in any charitable Foundation.**
 
 ---
 
@@ -711,14 +630,6 @@ Signature: ______________________
 
 Date: __________________________
 
-**Atto Foundation — Authorized Representative (only upon lawful formation and authorization)**
-
-Name / Title: ___________________________
-
-Signature: _____________________________
-
-Date: __________________________________
-
 **Founding Contributor**
 
 Name: __________________________
@@ -729,4 +640,4 @@ Date: __________________________
 
 ---
 
-**End of Agreement — Version 0.3 (draft).**
+**End of Agreement — Version 0.4 (unexecuted draft).**
