@@ -100,7 +100,8 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
         if decision in ("accepted", "rejected"):
             reviewer = opaque(reviewer, p + ".reviewer_ref")
             check(reviewer.startswith("reviewer:"), f"{p}: reviewer reference must use reviewer: prefix")
-            check(reviewer != grant["contributor_ref"], f"{p}: contributor cannot self-review")
+            check(reviewer.split(":", 1)[1] != grant["contributor_ref"].split(":", 1)[1],
+                  f"{p}: contributor cannot self-review under different namespace")
         else:
             check(reviewer is None, f"{p}: pending review cannot claim a reviewer decision")
         if decision == "accepted":
