@@ -48,7 +48,7 @@ def audit_company(text: str) -> list[str]:
     ), "Company")
     if "**Foundation grant (conditional):**" in text:
         issues.append("obsolete conditional Foundation equity grant")
-    if re.search(r"(?i)\b5(?:\.0+)?\s*%\b", text):
+    if re.search(r"(?i)\b5(?:\.0+)?\s*%(?!\w)", text):
         issues.append("stale 5% percentage")
     if re.search(r"(?im)\bFoundation\s+(?:shall|will)\s+(?:issue|grant)\s+(?:the Contributor )?(?:4(?:\.0+)?\s*%\s*)?(?:private )?(?:shares|equity)", text):
         issues.append("Foundation equity issuance asserted")
@@ -82,7 +82,7 @@ def audit_foundation(text: str) -> list[str]:
         "no automatic salary",
         "no royalty rate",
         "30 calendar days",
-        "disinterested",
+        "Foundation's authorized **disinterested** decision-makers must approve",
         "in advance",
         "independent market comparables",
         "Schedule A — Paid Services Work Order",
@@ -232,7 +232,9 @@ class ContractDraftSafetyTests(unittest.TestCase):
         self.assertTrue(any("falsely guaranteeing" in x for x in audit_foundation(altered)))
 
     def test_foundation_missing_disinterested_approval_fails(self):
-        altered = self.foundation.replace("disinterested", "interested")
+        altered = self.foundation.replace(
+            "Foundation\'s authorized **disinterested** decision-makers must approve",
+            "Foundation\'s authorized interested decision-makers must approve", 1)
         self.assertTrue(audit_foundation(altered))
 
     def test_foundation_missing_chain_of_title_fails(self):
