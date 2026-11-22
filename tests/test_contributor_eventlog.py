@@ -3,6 +3,7 @@
 
 from copy import deepcopy
 from contextlib import redirect_stdout
+from fractions import Fraction
 import io
 import json
 from pathlib import Path
