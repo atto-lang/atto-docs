@@ -28,7 +28,7 @@ Related policy: [Conflicts and Compensation Approval Policy](../policies/foundat
 
 - Comparable role or IP rights; dates, geographic scope and units: **[REQUIRED]**
 - Market salary, service and/or license rate evidence (attach restricted exhibits): **[REQUIRED]**
-- Aggregate pay from Foundation and related organizations, including fringe benefits and bonuses: **[REQUIRED]**
+- Full compensation and aggregate pay from Foundation and related organizations, including fringe benefits and bonuses: **[REQUIRED]**
 - Existing assignments/licenses; title evidence; double-pay review: **[REQUIRED]**
 - Alternative bids/options and justification: **[REQUIRED]**
 - Proposed rate or amount versus comparables and reviewer explanation: **[REQUIRED]**
