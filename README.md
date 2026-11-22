@@ -10,6 +10,20 @@
 
 The initial contributor agreement was based on the founder's [source gist](https://gist.github.com/ORESoftware/d857934cd5aed6e7cf71ca891165131e), which contained a 5% Company equity plus 5% net-receipts proposal. Those **old 5% economics are not the current drafts**.
 
+## Execution-package templates (all unsigned)
+
+These are **draft forms, not actual board decisions, salary offers, share grants or licenses**. Completed and signed copies with names, pay rates, IP evidence, cap tables and minutes belong in access-controlled legal storage rather than this general repository.
+
+- [Foundation conflict-of-interest and compensation policy](policies/foundation-conflicts-and-compensation-policy.md) — proposed board policy; requires actual adoption and annual/event-based conflict disclosures.
+- [Disinterested compensation / IP approval record](templates/foundation-compensation-approval-record.md) — market comparables, recusals, authorized quorum, funding and minute-book evidence.
+- [Foundation paid-services work order](templates/foundation-paid-services-work-order.md) — approved contractor deliverables, reasonable fees and acceptance; separate employment agreement/payroll required where worker law demands.
+- [Foundation specific-IP license](templates/foundation-specific-ip-license.md) — documented licensor ownership and chain of title, charitable-use justification, independently valued **transaction-specific** royalty terms; **no default 4% of charity income or donations**.
+- [AttoPL Co 4% non-voting equity-grant template](templates/company-4pct-nonvoting-equity-grant.md) — final issuer, actual non-voting class, 4% fully diluted cap table, approvals, 3+36 month vesting and tax/security review before execution.
+- [Contributor performance / vesting record](templates/contributor-performance-and-vesting-record.md) — three substantive contributions a month; tracks Company grant installments only, not Foundation equity or pay.
+- [Legal review and execution checklist](templates/legal-review-execution-checklist.md) — gated entity, governance, tax, charity, IP, securities, employment and signature checks.
+
+Nothing here creates or confirms an IRS 501(c)(3) determination, an authorized Foundation salary/royalty, or Company ownership. Nonprofit and securities counsel must approve the legal forms and documents before execution.
+
 ## Economic and governance distinctions
 
 | Entity | Proposed contributor consideration | Governance |

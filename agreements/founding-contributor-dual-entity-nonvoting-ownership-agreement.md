@@ -46,6 +46,8 @@ AttoLang is presently proprietary, not open source. No public right to disclose,
 
 # ARTICLE 2 — FOUR PERCENT NON-VOTING COMPANY EQUITY ONLY
 
+**Execution companion:** The proposed [4% non-voting Company equity grant template](../templates/company-4pct-nonvoting-equity-grant.md) and [qualifying-contributions and vesting ledger](../templates/contributor-performance-and-vesting-record.md) provide drafting/recordkeeping guidance. They are not corporate approvals, actual share issuances, guaranteed anti-dilution, or authority to transfer Foundation assets.
+
 ### 2.1 Company award
 
 Subject to authorization, legal issuance and service vesting, the Company shall arrange for the Contributor to receive **4.00% of its fully diluted equity at the grant date**, in a **non-voting** class of shares or membership units documented in Schedule D and definitive instruments. The fully diluted denominator includes outstanding capital and agreed as-converted/as-exercised interests and incentive pool, consistently defined in the signed capitalization schedule.
