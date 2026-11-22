@@ -90,6 +90,8 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
         refs = row["evidence_refs"]
         check(type(refs) is list and len(refs) <= 20, f"{p}.evidence_refs: invalid list")
         refs = [opaque(ref, p + ".evidence_refs") for ref in refs]
+        check(all(ref.startswith(("pr:", "issue:", "commit:", "ci:", "doc:")) for ref in refs),
+              f"{p}: evidence must refer to work/review artifacts, not payout or legal status")
         check(len(set(refs)) == len(refs), f"{p}: duplicate evidence within month")
         for ref in refs:
             check(ref not in used_evidence, f"{p}: evidence reused in another grant or month")
@@ -97,6 +99,7 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
         reviewer = row["reviewer_ref"]
         if decision in ("accepted", "rejected"):
             reviewer = opaque(reviewer, p + ".reviewer_ref")
+            check(reviewer.startswith("reviewer:"), f"{p}: reviewer reference must use reviewer: prefix")
             check(reviewer != grant["contributor_ref"], f"{p}: contributor cannot self-review")
         else:
             check(reviewer is None, f"{p}: pending review cannot claim a reviewer decision")
@@ -138,7 +141,9 @@ def validate_registry(doc: object) -> dict:
         "entity_ref", "non_voting_class_ref", "base_fully_diluted_units", "grant_strategy"
     }, "company")
     opaque(company["entity_ref"], "company.entity_ref")
+    check(company["entity_ref"].startswith("entity:"), "company: require opaque entity: reference")
     opaque(company["non_voting_class_ref"], "company.non_voting_class_ref")
+    check(company["non_voting_class_ref"].startswith("class:"), "company: require class: reference")
     base = number(company["base_fully_diluted_units"],
                   "company.base_fully_diluted_units", low=1)
     strategy = company["grant_strategy"]
@@ -149,6 +154,7 @@ def validate_registry(doc: object) -> dict:
         "compensation", "royalties", "voting_rights"
     }, "foundation")
     opaque(foundation["entity_ref"], "foundation.entity_ref")
+    check(foundation["entity_ref"].startswith("entity:"), "foundation: require opaque entity: reference")
     check(number(foundation["ownership_bps"], "foundation.ownership_bps") == 0,
           "foundation: charitable nonprofit cannot grant private ownership")
     check(foundation["nonprofit_status"] == "intended_501c3_unverified",
@@ -162,14 +168,19 @@ def validate_registry(doc: object) -> dict:
     gate_keys = {"entity_verification", "cap_table_draft", "nonvoting_class_draft",
                  "outside_counsel_packet", "authorized_signatory_plan"}
     gates = require_keys(data["counsel_packet_refs"], gate_keys, "counsel_packet_refs")
-    if stage == "READY_FOR_COUNSEL":
-        for key in sorted(gate_keys):
-            opaque(gates[key], f"counsel_packet_refs.{key}")
-    else:
-        for key in sorted(gate_keys):
-            check(gates[key] is None or bool(REF_PATTERN.fullmatch(gates[key]))
-                  if type(gates[key]) is str else gates[key] is None,
-                  f"counsel_packet_refs.{key}: invalid reference")
+    gate_prefixes = {"entity_verification": "entity:", "cap_table_draft": "cap:",
+                     "nonvoting_class_draft": "class:", "outside_counsel_packet": "counsel:",
+                     "authorized_signatory_plan": "doc:"}
+    for key in sorted(gate_keys):
+        value = gates[key]
+        if stage == "READY_FOR_COUNSEL":
+            opaque(value, f"counsel_packet_refs.{key}")
+            check(value.startswith(gate_prefixes[key]),
+                  f"counsel_packet_refs.{key}: incorrect evidence category")
+        elif value is not None:
+            opaque(value, f"counsel_packet_refs.{key}")
+            check(value.startswith(gate_prefixes[key]),
+                  f"counsel_packet_refs.{key}: incorrect evidence category")
     grants = data["grants"]
     check(type(grants) is list and 1 <= len(grants) <= MAX_GRANTS,
           f"grants: require 1..{MAX_GRANTS} non-voting Company awards")
@@ -271,8 +282,16 @@ def load_registry(path: Path) -> object:
         raise ContractValidationError("NaN/infinite values are prohibited")
     def invalid_float(_: str):
         raise ContractValidationError("floating point JSON values are prohibited; use integers")
+    def reject_duplicate_keys(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ContractValidationError("duplicate JSON object key is prohibited")
+            result[key] = value
+        return result
     try:
-        return json.loads(raw, parse_constant=invalid_constant, parse_float=invalid_float)
+        return json.loads(raw, parse_constant=invalid_constant, parse_float=invalid_float,
+                          object_pairs_hook=reject_duplicate_keys)
     except json.JSONDecodeError as exc:
         raise ContractValidationError(f"invalid JSON syntax at line {exc.lineno}") from exc
 
