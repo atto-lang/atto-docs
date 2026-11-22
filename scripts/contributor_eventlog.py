@@ -13,7 +13,10 @@ import json
 from pathlib import Path
 import sys
 
-from scripts import contributor_admin as admin
+if __package__:
+    from . import contributor_admin as admin
+else:
+    import contributor_admin as admin
 
 DOMAIN = b"ATTO-DRAFT-REVIEW-CHAIN-V1\n"
 GENESIS = "0" * 64
@@ -56,6 +59,9 @@ def validate_events(log: object, registry: object, expected_root: str | None) ->
     if expected_root is not None:
         check_digest(expected_root, "expected_root")
     grants = {g["grant_ref"]: g for g in registry["grants"]}
+    for grant in registry["grants"]:
+        admin.check(grant["periods"] == [],
+                    "event-chain mode cannot mix immutable events with mutable period snapshots")
     state: dict[tuple[str, str], dict] = {}
     evidence_seen: set[str] = set()
     previous = GENESIS
