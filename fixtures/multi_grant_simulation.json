@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "stage": "DRAFT",
+  "registry_ref": "doc:synthetic-three-contributor-case",
+  "company": {
+    "entity_ref": "entity:atto-co-hypothetical",
+    "non_voting_class_ref": "class:nonvoting-draft",
+    "base_fully_diluted_units": 22000,
+    "grant_strategy": "simultaneous"
+  },
+  "foundation": {
+    "entity_ref": "entity:atto-foundation-hypothetical",
+    "ownership_bps": 0,
+    "nonprofit_status": "intended_501c3_unverified",
+    "compensation": "separate_approved_signed_services_only",
+    "royalties": "specific_independently_valued_ip_license_only",
+    "voting_rights": false
+  },
+  "grants": [
+    {
+      "grant_ref": "grant:alpha-demo",
+      "contributor_ref": "contrib:alpha-demo",
+      "target_bps": 400,
+      "non_voting": true,
+      "proposed_units": 1000,
+      "start_month": "2026-01",
+      "periods": [
+        {
+          "month": "2026-01",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:alpha-m1-item1",
+            "pr:alpha-m1-item2",
+            "pr:alpha-m1-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        },
+        {
+          "month": "2026-02",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:alpha-m2-item1",
+            "pr:alpha-m2-item2",
+            "pr:alpha-m2-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        },
+        {
+          "month": "2026-03",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:alpha-m3-item1",
+            "pr:alpha-m3-item2",
+            "pr:alpha-m3-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        },
+        {
+          "month": "2026-04",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:alpha-m4-item1",
+            "pr:alpha-m4-item2",
+            "pr:alpha-m4-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        },
+        {
+          "month": "2026-05",
+          "review": "rejected",
+          "evidence_refs": [
+            "issue:alpha-m5-needs-cure"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        },
+        {
+          "month": "2026-06",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:alpha-m6-item1",
+            "pr:alpha-m6-item2",
+            "pr:alpha-m6-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-alpha"
+        }
+      ]
+    },
+    {
+      "grant_ref": "grant:beta-demo",
+      "contributor_ref": "contrib:beta-demo",
+      "target_bps": 400,
+      "non_voting": true,
+      "proposed_units": 1000,
+      "start_month": "2026-01",
+      "periods": [
+        {
+          "month": "2026-01",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:beta-m1-item1",
+            "pr:beta-m1-item2",
+            "pr:beta-m1-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-beta"
+        },
+        {
+          "month": "2026-02",
+          "review": "rejected",
+          "evidence_refs": [
+            "issue:beta-m2-needs-cure"
+          ],
+          "reviewer_ref": "reviewer:independent-beta"
+        },
+        {
+          "month": "2026-03",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:beta-m3-item1",
+            "pr:beta-m3-item2",
+            "pr:beta-m3-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-beta"
+        },
+        {
+          "month": "2026-04",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:beta-m4-item1",
+            "pr:beta-m4-item2",
+            "pr:beta-m4-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-beta"
+        },
+        {
+          "month": "2026-05",
+          "review": "accepted",
+          "evidence_refs": [
+            "pr:beta-m5-item1",
+            "pr:beta-m5-item2",
+            "pr:beta-m5-item3"
+          ],
+          "reviewer_ref": "reviewer:independent-beta"
+        }
+      ]
+    },
+    {
+      "grant_ref": "grant:gamma-demo",
+      "contributor_ref": "contrib:gamma-demo",
+      "target_bps": 400,
+      "non_voting": true,
+      "proposed_units": 1000,
+      "start_month": "2026-01",
+      "periods": [
+        {
+          "month": "2026-01",
+          "review": "pending",
+          "evidence_refs": [],
+          "reviewer_ref": null
+        },
+        {
+          "month": "2026-02",
+          "review": "pending",
+          "evidence_refs": [],
+          "reviewer_ref": null
+        }
+      ]
+    }
+  ],
+  "counsel_packet_refs": {
+    "entity_verification": null,
+    "cap_table_draft": null,
+    "nonvoting_class_draft": null,
+    "outside_counsel_packet": null,
+    "authorized_signatory_plan": null
+  },
+  "legal_claims_verified": false
+}

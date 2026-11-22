@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "stage": "DRAFT",
+  "registry_ref": "doc:synthetic-sequential-dilution-case",
+  "company": {
+    "entity_ref": "entity:atto-co-hypothetical",
+    "non_voting_class_ref": "class:nonvoting-draft",
+    "base_fully_diluted_units": 57600,
+    "grant_strategy": "sequential"
+  },
+  "foundation": {
+    "entity_ref": "entity:atto-foundation-hypothetical",
+    "ownership_bps": 0,
+    "nonprofit_status": "intended_501c3_unverified",
+    "compensation": "separate_approved_signed_services_only",
+    "royalties": "specific_independently_valued_ip_license_only",
+    "voting_rights": false
+  },
+  "grants": [
+    {
+      "grant_ref": "grant:alpha-demo",
+      "contributor_ref": "contrib:alpha-demo",
+      "target_bps": 400,
+      "non_voting": true,
+      "proposed_units": 2400,
+      "start_month": "2026-01",
+      "periods": []
+    },
+    {
+      "grant_ref": "grant:beta-demo",
+      "contributor_ref": "contrib:beta-demo",
+      "target_bps": 400,
+      "non_voting": true,
+      "proposed_units": 2500,
+      "start_month": "2026-01",
+      "periods": []
+    }
+  ],
+  "counsel_packet_refs": {
+    "entity_verification": null,
+    "cap_table_draft": null,
+    "nonvoting_class_draft": null,
+    "outside_counsel_packet": null,
+    "authorized_signatory_plan": null
+  },
+  "legal_claims_verified": false
+}

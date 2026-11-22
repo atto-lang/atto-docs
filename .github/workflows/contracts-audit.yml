@@ -1,10 +1,17 @@
-name: Contracts safety audit
+name: Contracts and contributor administration safety audit
 
 on:
   pull_request:
     paths:
       - "agreements/**"
+      - "policies/**"
+      - "templates/**"
+      - "docs/**"
+      - "schemas/**"
+      - "fixtures/**"
+      - "scripts/**"
       - "tests/**"
+      - ".gitignore"
       - ".github/workflows/contracts-audit.yml"
       - "README.md"
   push:
@@ -21,5 +28,24 @@ jobs:
     steps:
       - name: Checkout pinned GitHub tree
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Run offline contract audit and mutation tests
+        with:
+          persist-credentials: false
+      - name: Run offline contracts, grant planning and negative mutation tests
         run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Validate both synthetic grant cohorts and reject fake legal PASS
+        shell: bash
+        run: |
+          set -euo pipefail
+          for fixture in fixtures/multi_grant_simulation.json fixtures/sequential_dilution_simulation.json; do
+            python3 scripts/contributor_admin.py audit "$fixture" | python3 -c '
+          import json,sys
+          r=json.load(sys.stdin)
+          assert r["machine_validation"] == "SCHEMA_AND_ARITHMETIC_ONLY"
+          assert r["legal_effect"] == "NONE"
+          assert r["shares_issued"] is False
+          assert r["human_approval_and_signatures_authenticated"] is False
+          assert r["foundation_salary_or_royalty_authorized"] is False
+          assert r["foundation_ownership_bps"] == 0
+          print("SYNTHETIC PLAN VALIDATED; NO LEGAL APPROVAL OR ISSUANCE")
+          '
+          done
