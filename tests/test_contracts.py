@@ -193,8 +193,9 @@ class ContractDraftSafetyTests(unittest.TestCase):
         self.assertTrue(any("four-percent" in x for x in audit_company(altered)))
 
     def test_company_39_month_schedule_mutation_fails(self):
-        altered = self.company.replace("earliest full vesting: **end of month 39**",
-                                       "earliest full vesting: **end of month 36**", 1)
+        altered = self.company.replace("Earliest full vesting: **end of month 39**",
+                                       "Earliest full vesting: **end of month 36**", 1)
+        self.assertNotEqual(self.company, altered)
         self.assertTrue(audit_company(altered))
 
     def test_company_missing_proprietary_notice_fails(self):
