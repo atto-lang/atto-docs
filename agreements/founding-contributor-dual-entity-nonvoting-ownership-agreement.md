@@ -85,6 +85,14 @@ Each 4% award is measured at its lawful grant date, not guaranteed against futur
 
 Until the Foundation is lawfully able to issue 4% private non-voting equity, **the Foundation grant is pending and cannot legally be completed or represented as vested ownership**. Vested service credits under Article 3 shall be tracked separately as a contingent contractual commitment, subject to a mutually signed lawful issuance structure. There is no automatic conversion into nonprofit shares, charitable donation rights, foundation profits or voting membership. The Foundation and Contributor must sign a legally compliant amendment before issuance; if no such solution can be agreed, the parties must negotiate the unresolved Foundation award in good faith rather than deem it satisfied.
 
+
+### 2.7 Issuance and legal-approval gate
+
+**No signature on this draft, service credit, acceptance of contributions, or reference to a percentage is proof that shares have been issued.** Before either award is represented as issued or vested, counsel and the authorized representatives must approve: (a) the actual entity names and legal forms; (b) the non-voting class terms, lawful protective class votes, and signed capitalization schedules; (c) the specific grant instrument and number of shares/units; (d) corporate approvals, securities and tax compliance, and any applicable wage obligations; and (e) issuance or permitted conditional service credits. An equity award must be evidenced by definitive instruments and the relevant company records.
+
+If the Foundation remains a charitable nonprofit, it must not issue ordinary private economic equity or distribute net earnings to contributors. The parties must make and document a lawful structural decision **before** describing any Foundation interest as ownership.
+
+
 ---
 
 # ARTICLE 3 — THREE-MONTH CLIFF AND 36-MONTH VESTING
@@ -121,7 +129,7 @@ The ordinary schedule is:
 | Month 27                  | 66.6667%                |
 | Month 39                  | 100%                    |
 
-The percentages above represent the portion of the original award that has vested.
+The percentages above represent the portion of the original award that has vested. For a legally issued **4.00%** award in a single entity, one 1/36 installment equals approximately **0.111111 percentage points** of that entity's original fully diluted capitalization (before later dilution). At month 4 the accrued award is approximately **0.1111% of the entity**; at month 15, **1.3333%**; at month 27, **2.6667%**; and at month 39, **4.0000%**. These examples are not additional awards or anti-dilution rights. For the Foundation, these are only prospective service-credit illustrations until its legal issuance conditions are satisfied.
 
 Once a legally issued award fully vests, the Contributor earns the entire originally granted **4% interest in that issuing entity**, subject to lawful dilution. For any blocked Foundation grant, service credits are tracked but do not amount to current Foundation ownership.
 
@@ -157,7 +165,7 @@ When the contributor relationship ends:
 
 ### 4.1 Minimum Monthly Requirement
 
-**The Contributor must complete a minimum of three (3) Qualifying Contributions per month.**
+**The Contributor must complete a minimum of three (3) Qualifying Contributions per month. The same contribution record is used to calculate the vesting schedule for both eligible awards, without counting one deliverable twice within a given month.**
 
 This requirement applies during both the initial three-month cliff and the subsequent 36-month vesting period.
 
@@ -250,7 +258,7 @@ A rejected contribution shall receive a brief explanation identifying the defici
 
 If the Contributor fails to meet the three-contribution minimum:
 
-1. The Company shall identify the deficient month and missing deliverables.
+1. The Company, as coordinating contribution reviewer for both intended awards, shall identify the deficient month and missing deliverables.
 2. The Contributor shall receive written notice and a 30-day opportunity to cure.
 3. If the shortfall is not cured, vesting for that month may be paused.
 4. Repeated underperformance may result in termination of the active contributor relationship.
@@ -259,7 +267,7 @@ Three consecutive uncured nonqualifying months may constitute grounds for termin
 
 ### 4.7 Flexibility and Exceptions
 
-The Company may approve reasonable exceptions for illness, personal emergencies, family circumstances, infrastructure outages, lack of repository access, or other legitimate obstacles.
+The Company (and the Foundation, if separately bound and authorized) may approve reasonable exceptions for illness, personal emergencies, family circumstances, infrastructure outages, lack of repository access, or other legitimate obstacles.
 
 Approved exceptions and their vesting consequences shall be recorded in writing.
 
@@ -356,7 +364,7 @@ Nothing in this Article waives reimbursement or other protections required by ap
 
 ### 6.1 Ownership rather than receipts participation
 
-The Contributor receives the conditional **4% non-voting equity interests** set forth in Article 2, not a separate contractual right to 4% (or 5%) of gross revenue, net revenue, royalties, cash receipts, Foundation donations, or subsidiary receipts.
+The Contributor receives the conditional **4% non-voting equity interests** set forth in Article 2, not a separate contractual right to a fixed percentage of gross revenue, net revenue, royalties, cash receipts, Foundation donations, or subsidiary receipts.
 
 ### 6.2 Dividends, profits and liquidity events
 
@@ -540,7 +548,7 @@ Any mandatory laws that cannot legally be excluded shall continue to apply.
 
 Material changes must be agreed in writing by the affected Parties.
 
-### 12.6 Corporate Documents
+### 12.6 Definitive Equity Documents
 
 Equity issuance, fully diluted capitalization, non-voting share or unit classes, vesting repurchase terms, mandatory statutory rights, and transfer restrictions must be implemented through legally approved instruments consistent with this Agreement. If Foundation equity is unavailable under the chosen nonprofit structure, no grant is deemed issued; Article 2.6 applies.
 
@@ -659,6 +667,32 @@ This is a non-exhaustive description of potential business operations only. **It
 
 ---
 
+# SCHEDULE D — ENTITY STRUCTURE, NON-VOTING CLASSES, AND CAPITALIZATION (TO BE COMPLETED BEFORE EXECUTION)
+
+**Company legal name and jurisdiction:** [TBD]
+
+**Company legal form / capitalization date:** [TBD]
+
+**Company non-voting equity class and 4% fully diluted calculation:** [TBD; attach board approvals and capitalization table]
+
+**Foundation legal name and jurisdiction:** [TBD]
+
+**Foundation legal status:** [charitable nonprofit / non-charitable equity-capable entity / other — specify]
+
+**If charitable nonprofit, Foundation 4% equity grant cannot be implemented:** [Counsel-approved lawful restructuring and executed amendment required]
+
+**Foundation non-voting equity class and 4% fully diluted calculation (only if lawful):** [TBD]
+
+**Common vesting commencement and contribution plan:** [TBD]
+
+**Statutory shareholder/member rights that cannot be waived:** [TBD by jurisdiction]
+
+**Representatives authorized to execute:** [TBD]
+
+**Counsel / tax / labor-law review completed:** [TBD]
+
+---
+
 # SIGNATURES
 
 **Founder**
@@ -692,32 +726,6 @@ Name: __________________________
 Signature: ______________________
 
 Date: __________________________
-
----
-
-# SCHEDULE D — ENTITY STRUCTURE, NON-VOTING CLASSES, AND CAPITALIZATION (TO BE COMPLETED BEFORE EXECUTION)
-
-**Company legal name and jurisdiction:** [TBD]
-
-**Company legal form / capitalization date:** [TBD]
-
-**Company non-voting equity class and 4% fully diluted calculation:** [TBD; attach board approvals and capitalization table]
-
-**Foundation legal name and jurisdiction:** [TBD]
-
-**Foundation legal status:** [charitable nonprofit / non-charitable equity-capable entity / other — specify]
-
-**If charitable nonprofit, Foundation 4% equity grant cannot be implemented:** [Counsel-approved lawful restructuring and executed amendment required]
-
-**Foundation non-voting equity class and 4% fully diluted calculation (only if lawful):** [TBD]
-
-**Common vesting commencement and contribution plan:** [TBD]
-
-**Statutory shareholder/member rights that cannot be waived:** [TBD by jurisdiction]
-
-**Representatives authorized to execute:** [TBD]
-
-**Counsel / tax / labor-law review completed:** [TBD]
 
 ---
 
