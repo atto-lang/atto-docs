@@ -49,7 +49,13 @@ Confidentiality duties remain in force. Third-party components remain subject to
 
 If the Project Owner later releases specified AttoLang code under an open-source license, that released code may be used under the published license's terms. Such a release does not, by itself, license Project trademarks or change the independent-fork naming restrictions in this addendum to the extent enforceable under applicable law.
 
-## 7. Relationship to the main agreement
+## 7. No voting or governance rights granted
+
+The permission to fork in this addendum conveys **no corporate or Foundation equity**, shareholder or member voting rights, board or trustee seats, manager or officer appointment powers, veto rights, or governance authority. No ownership or governance powers are implied by Founding Engineer status alone.
+
+Where a Founding Engineer separately enters into the AttoLang Founding Contributor Non-Voting Dual-Entity Ownership Agreement, any proposed **4% ownership award in AttoPL Co / Atto Co and conditional 4% ownership award in an equity-capable Atto Foundation** is intended to be **non-voting**, subject to the definitive legal instruments and any rights that cannot lawfully be waived. **A charitable nonprofit Foundation cannot issue ordinary private equity**, and a conditional Foundation equity proposal is not an already-issued ownership interest.
+
+## 8. Relationship to the main agreement
 
 In the event of a conflict with the signed Founding Engineers Agreement, the parties should expressly identify in the executed documents which provision controls. This proposed addendum is not effective merely because it is stored in a repository.
 
