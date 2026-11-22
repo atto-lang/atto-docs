@@ -25,13 +25,14 @@ def audit_contributor(text: str) -> list[str]:
     require(text.count("**Foundation grant (conditional):**") == 1, "expected one conditional Foundation grant")
 
     for phrase in (
-        "4.00% interest in the Company's", "4.00% interest in the Foundation's",
+        "**4.00%** interest in the Company's", "**4.00%** interest in the Foundation's",
         "not a shared 4% pool", "fully diluted", "non-voting",
         "no ordinary votes", "no board or committee seat",
         "No clause purports to waive nonwaivable statutory rights",
         "Foundation grant is pending", "cannot legally be completed",
-        "charitable nonprofit cannot grant", "not an already-issued",
-        "definitive instruments", "no ordinary voting right",
+        "charitable nonprofit cannot grant", "No Foundation equity is represented as issued",
+        "definitive instruments", "Neither 4% award conveys any ordinary voting right",
+        "**without ordinary voting rights**",
         "not a separate contractual right", "No dividend or distribution is guaranteed",
         "three (3) Qualifying Contributions per month", "thirty-six (36)",
         "39 months", "0.111111 percentage points",
@@ -128,7 +129,7 @@ class ContractSafetyAudit(unittest.TestCase):
         # Check the unambiguous voting sentence, rather than relying on occurrence counts.
         self.assertIn("without ordinary voting rights", self.c)
         self.assertNotIn("without ordinary voting rights", changed)
-        self.assertTrue(audit_contributor(changed) or "with ordinary voting rights" in changed)
+        self.assertTrue(any("without ordinary voting rights" in m for m in audit_contributor(changed)))
 
     def test_misplaced_signature_page_is_rejected(self) -> None:
         changed = self.c.replace("# SCHEDULE D", "# WRONG SIGNATURE ORDER", 1)
