@@ -12,6 +12,8 @@ This document implements the [Company founding-contributor agreement](../agreeme
 
 **Do not count a reviewer’s approval of a GitHub PR as Foundation compensation authorization, Company share issuance, counsel review or executed signatures.**
 
+**Independent fork election limitation:** The synthetic registry and event-chain tools do not model, determine or enforce the new signed-grant election cutoff. Do not use their uninterrupted vesting projections after an actual or disputed election; reconcile qualifying periods, the effective date and vested/unvested units in restricted legal records using the [vesting ledger](../templates/contributor-performance-and-vesting-record.md) and signed grant. No GitHub record can establish the legal election.
+
 ## 2. Safety and record boundaries
 
 The committed JSON examples under [fixtures/](../fixtures/multi_grant_simulation.json) and [fixtures/](../fixtures/sequential_dilution_simulation.json) are explicitly **synthetic**. They contain only opaque `contrib:`, `grant:`, `reviewer:`, `pr:`, `issue:` and similar references. Do **not** replace them with real identities or production evidence. The repository contains no real legal approval records.
