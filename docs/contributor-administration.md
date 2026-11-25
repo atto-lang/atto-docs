@@ -77,6 +77,10 @@ A self-assigned review is invalid, including when the same opaque ID appears in 
 
 In particular, passing GitHub Actions **cannot move any record to APPROVED or EXECUTED**. The words must not be interpreted as GitHub labels, PR approvals or a casual checkbox. A future production administrator would need an appropriately authenticated signing/approval system with immutable audit evidence, proper separation of duties, revocation and reliable transfer ledger integration.
 
+## 6A. Hardened synthetic review transitions
+
+The [synthetic contributor event-chain protocol](contributor-review-event-protocol.md) and [bounded event-chain validator](../scripts/contributor_eventlog.py) add explicit submission, independent review, rejection and cure state transitions. A source-only SHA-256 event chain may be checked against an **independently pinned** root; that is **not** a trusted signature or immutable production store. Legacy monthly snapshots and event-chain decisions are mutually exclusive. The tool rejects accepted months after unresolved earlier decisions, so pending review cannot manufacture vesting in later periods. Full identity, contract, cap-table and approval authentication remains outside this repo.
+
 ## 7. Review/approval evidence checks (for authorized humans)
 
 **Company equity readiness:** exact entity legal name, legal jurisdiction, actual non-voting share class authorization, signed fully diluted cap table with explicit grants and dilution, management/board resolution, securities and tax review, 83(b) applicability where appropriate, classified worker obligations, vesting/repurchase and issued share ledger. Attach signed agreement and restricted record IDs outside GitHub.

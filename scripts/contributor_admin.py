@@ -80,6 +80,7 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
     cliff_accepted = 0
     installments = 0
     pauses = 0
+    unresolved_previous_month = False
     for i, raw in enumerate(rows):
         p = f"{path}.periods[{i}]"
         row = require_keys(raw, {"month", "review", "evidence_refs", "reviewer_ref"}, p)
@@ -105,6 +106,8 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
         else:
             check(reviewer is None, f"{p}: pending review cannot claim a reviewer decision")
         if decision == "accepted":
+            check(not unresolved_previous_month,
+                  f"{p}: cannot accrue vesting after an earlier unresolved pending period")
             check(len(refs) >= 3, f"{p}: accepted month needs >=3 distinct substantial evidence refs")
             if cliff_accepted < 3:
                 cliff_accepted += 1
@@ -112,7 +115,9 @@ def _periods(grant: dict, path: str, used_evidence: set[str]) -> dict:
                 installments += 1
         elif decision == "rejected":
             pauses += 1
-        # Pending periods are unvested, but not recorded as a rejection.
+        else:
+            unresolved_previous_month = True
+        # Pending periods are unvested; later accepted periods cannot skip them.
     return {
         "recorded_months": len(rows),
         "cliff_months_accepted": cliff_accepted,
@@ -276,7 +281,8 @@ def validate_registry(doc: object) -> dict:
 
 
 def load_registry(path: Path) -> object:
-    check(path.is_file(), "registry file missing")
+    check(path.is_file() and not path.is_symlink(),
+          "registry file missing or symlinked")
     check(path.stat().st_size <= MAX_BYTES, "registry exceeds size limit")
     raw = path.read_text(encoding="utf-8")
     def invalid_constant(_: str):
@@ -295,6 +301,8 @@ def load_registry(path: Path) -> object:
                           object_pairs_hook=reject_duplicate_keys)
     except json.JSONDecodeError as exc:
         raise ContractValidationError(f"invalid JSON syntax at line {exc.lineno}") from exc
+    except RecursionError as exc:
+        raise ContractValidationError("JSON nesting exceeds safe parser depth") from exc
 
 
 def main(argv: list[str] | None = None) -> int:

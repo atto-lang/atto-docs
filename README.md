@@ -51,6 +51,14 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 
 **Strict boundary:** Only synthetic `DRAFT` and `READY_FOR_COUNSEL` records are permitted by this repository's CLI, with `legal_claims_verified=false`. `APPROVED` and `EXECUTED` are intentionally rejected and can only be established by independently authenticated, authorized and signed **restricted legal records**. A CI success means **schema and arithmetic checks only**, never approved compensation, legal formation, equity issuance or grant distributions. Real personal and signing records must stay outside GitHub in authorized restricted storage.
 
+## PR #5 — contributor review-state hardening (synthetic only)
+
+[Review event-chain protocol and threat model](docs/contributor-review-event-protocol.md), [offline event-chain validator](scripts/contributor_eventlog.py), and [adversarial event/vesting tests](tests/test_contributor_eventlog.py) extend the contributor registry with SUBMIT / ACCEPT / REJECT / CURE transitions and an optional externally pinned SHA-256 root.
+
+The tool **does not create an authenticated append-only store**. It only detects changes relative to an independently pinned digest; an attacker holding both the data and root can rewrite both. Opaque reviewers are not real identity verification, and test evidence references do not prove substantive work. Neither CI nor a matching hash may authorize Company equity, Foundation payroll, IP residuals or legal execution. Only signed records under lawful independent controls can do so.
+
+The legacy mutable monthly registry has also been hardened: accepted months **cannot accrue vesting after an earlier unresolved pending month**, source JSON inputs cannot be symlinks, and over-deep JSON is rejected. The new event-chain mode and legacy monthly snapshots are **mutually exclusive** to avoid conflicting approvals.
+
 ## Legal and signing gates
 
 Before signing, U.S. nonprofit/tax counsel and relevant local/employment counsel should resolve the actual legal entities, location and charitable classification; Company non-voting share class and 4% fully diluted cap table; statutory minority shareholder rights; wage/classification rules; reasonable nonprofit compensation; independent board approval, comparability and minutes; contributor IP chain of title; potential related-party and inter-company licensing; deferred compensation tax rules; and any Form 990/Schedule L reporting. **No Foundation salary/royalty is guaranteed or earned just from founding status.** An authorized, funded work order or written employment agreement creates an enforceable payment obligation when compensation is lawfully earned.
