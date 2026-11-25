@@ -17,6 +17,8 @@
 - [ ] Attach signed, **fully diluted** capitalization table and define the denominator, option pool, conversion assumptions, exact units/shares and 4% calculation.
 - [ ] Confirm corporate authority for a **non-voting** share/unit class and statutory class votes that cannot be waived.
 - [ ] Document 3-month cliff, 36 monthly installments, earliest full vesting at month 39, and three substantive accepted monthly contributions.
+- [ ] Before incorporating the [fork election clause](../agreements/founding-engineer-forking-and-naming-addendum.md), obtain jurisdiction-specific counsel review of competition, employment, wage, equity and IP law; confirm written grant consent, qualifying period boundaries/time zone, written evidence and disinterested review, pending-dispute handling, retention of vested shares, treatment of unvested units, and survival of the limited private-fork license. Do not apply cessation retroactively or to unrelated founder holdings.
+- [ ] Confirm separate Foundation approval and preservation of earned wages, fees and enforceable royalties; no automatic cross-default or private Foundation equity.
 - [ ] Address securities/tax law, entity form, grant consideration, worker classification and, **where actually applicable**, time-sensitive 83(b) election for transferred restricted property.
 - [ ] Execute the definitive grant documents, record actual issuance in Company records and provide contributor-specific copies **privately**.
 - [ ] Keep personal tax IDs, signatures and capitalization details out of broadly shared draft files.
