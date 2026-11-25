@@ -26,7 +26,7 @@
 
 ## Independent fork election record (restricted)
 
-Record the signed applicable grant and addendum, contributor notice, objective evidence, disinterested review, decision date, election effective date, any dispute and resolution, last completed qualifying period, earned installment count and remaining unvested units. Under the signed lawful clause, **future vesting stops**: a period ending on or after the election date earns zero installments; completed eligible periods before that date may be accepted later. **Vested equity is retained**. No automatic resumption; any new grant or resumed schedule requires a prospective signed instrument and approval. No Foundation equity or payment is administered here.
+Record the signed applicable grant and addendum, contributor notice, objective evidence, disinterested review, decision date, election effective date, any dispute and resolution, last completed qualifying period, signed period boundaries and time zone, earned installment count and remaining unvested units. While disputed, retain provisional entries without cancellation or repurchase; reconcile after the authorized determination. Do not rely on uninterrupted projections from the synthetic administrative tools. Under the signed lawful clause, **future vesting stops**: a period ending on or after the election date earns zero installments; completed eligible periods before that date may be accepted later. **Vested equity is retained**. No automatic resumption; any new grant or resumed schedule requires a prospective signed instrument and approval. No Foundation equity or payment is administered here.
 
 ## Monthly review (copy per period into restricted contributor record)
 
