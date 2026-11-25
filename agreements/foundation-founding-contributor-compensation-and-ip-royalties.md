@@ -85,6 +85,8 @@ The parties shall **not** automatically accumulate unpaid salary, deferred compe
 
 ## ARTICLE 8 — TERMINATION AND RIGHTS THAT SURVIVE
 
+**Independent fork election.** An eligible founder or contributor may exercise a separately signed private-fork permission, subject to the [Forking and Naming Addendum](founding-engineer-forking-and-naming-addendum.md). Following an Independent Fork Election under Section 8 of that addendum, a disinterested authorized Foundation reviewer may independently end prospective founding-contributor status or discretionary future engagements, only in accordance with the Foundation's charitable mission, applicable law and separate signed terms. The Foundation has no private equity or vesting to cancel; earned wages and fees, enforceable IP royalty rights and mandatory statutory rights remain protected. No automatic termination or cross-default of signed employment, services or IP contracts occurs. No Foundation decision is dictated by the Company or used to penalize lawful conduct.
+
 1. Either party may end the unpaid founding-status relationship on written notice, subject to law, confidentiality and any agreed transition duties. The termination of a signed employment contract or paid work order is determined by that instrument and mandatory law.
 2. The Foundation must pay **earned and legally owed** wages or approved work-order fees, and honor lawful royalties under a separate license on its terms. No perpetual Foundation economic entitlement survives merely by virtue of founding status.
 3. Unapproved applications for work, unvested Company equity, and potential future projects do not become payable obligations of the Foundation. Company equity continues according to its own documents.
