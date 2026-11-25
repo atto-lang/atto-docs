@@ -10,6 +10,8 @@
 
 The initial contributor agreement was based on the founder's [source gist](https://gist.github.com/ORESoftware/d857934cd5aed6e7cf71ca891165131e), which contained a 5% Company equity plus 5% net-receipts proposal. Those **old 5% economics are not the current drafts**.
 
+**Independent fork election:** Eligible founders and contributors retain the existing limited private-fork permission. A qualifying independent fork election under the signed addendum stops future Company service vesting, preserves vested shares, and excludes ordinary upstream development forks. No Foundation equity exists; future discretionary Foundation engagements may end only through independent lawful decisions, preserving earned pay and enforceable royalties. Counsel must review the prospective clause before execution. The synthetic administrative tooling does not implement or adjudicate this new legal election rule.
+
 ## Execution-package templates (all unsigned)
 
 These are **draft forms, not actual board decisions, salary offers, share grants or licenses**. Completed and signed copies with names, pay rates, IP evidence, cap tables and minutes belong in access-controlled legal storage rather than this general repository.
