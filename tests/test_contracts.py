@@ -282,13 +282,46 @@ class IndependentForkElectionTests(unittest.TestCase):
         fork = FORK_PATH.read_text(encoding="utf-8").lower()
         for phrase in ("ordinary upstream development branches", "pull-request forks",
                        "disinterested authorized reviewer", "no public distribution",
-                       "no retroactive change", "no private equity to surrender"):
+                       "no retroactive change", "no private equity to surrender",
+                       "survives the election", "pending a dispute",
+                       "never before the effective date", "strictly before the election date",
+                       "no partial-period installment", "no determination may undo previously vested rights"):
             self.assertIn(phrase, fork)
         foundation = (ROOT / "agreements/foundation-founding-contributor-compensation-and-ip-royalties.md").read_text(encoding="utf-8").lower()
         for phrase in ("no automatic termination or cross-default",
                        "earned wages and fees", "enforceable ip royalty rights",
                        "disinterested authorized foundation reviewer"):
             self.assertIn(phrase, foundation)
+
+
+    def test_election_cutoff_examples(self):
+        # Illustrative month-end convention; not a legal determination or admin tool.
+        # Same-day completion is excluded; a previously completed period may
+        # qualify even if approved later. Unvested periods cannot be counted.
+        from datetime import date
+        from calendar import monthrange
+
+        def illustrative_installments(election, accepted_period_ends):
+            return min(36, sum(end < election for end in accepted_period_ends))
+
+        periods = [date(2027 + i // 12, i % 12 + 1,
+                        monthrange(2027 + i // 12, i % 12 + 1)[1])
+                   for i in range(3, 39)]
+        cases = (
+            (date(2027, 3, 31), 0),
+            (date(2027, 4, 30), 0),
+            (date(2027, 5, 1), 1),
+            (date(2028, 4, 1), 12),
+            (date(2028, 10, 1), 18),
+            (date(2030, 3, 31), 35),
+            (date(2030, 4, 1), 36),
+        )
+        for election, expected in cases:
+            with self.subTest(election=election):
+                self.assertEqual(expected, illustrative_installments(election, periods))
+                self.assertEqual(Fraction(expected, 9),
+                                 Fraction(4) * illustrative_installments(election, periods) / 36)
+        self.assertEqual(11, illustrative_installments(date(2028, 4, 1), periods[1:]))
 
 
 if __name__ == "__main__":
