@@ -53,6 +53,10 @@ The holder receives economic rights only as specified in the issued class: **no 
 
 These are illustrative values before dilution; actual unit vesting, fractional-unit rounding, forfeiture/repurchase price, separation effects and change-of-control terms must be in definitive documents. **Vested Company equity cannot be unilaterally cancelled merely because future work stops**, subject to enforceable existing restrictions and law. Do not impose noncompetes, forfeitures or retroactive clawbacks without counsel review.
 
+### 4.1 Independent fork election
+
+In the definitive grant expressly incorporating Section 8 of the [Forking and Naming Addendum](../agreements/founding-engineer-forking-and-naming-addendum.md), **future vesting stops** on the Independent Fork Election effective date, subject to applicable law. No installment for a qualifying period ending on or after that date accrues; previously completed qualifying periods are not disqualified by later acceptance. **Vested equity is retained**. Unvested interests are handled under signed lawful cancellation or repurchase terms. Ordinary development branches, upstream forks and qualifying experiments are excluded as specified in the addendum. No automatic resumption, retroactive forfeiture, cancellation of unrelated founder holdings or cancellation of Foundation payments is authorized. Counsel must review applicable competition and employment law and confirm the required written consent and grant approval before execution.
+
 ## 5. Transfer, taxes and no implied guarantees
 
 - Validity, tax valuation and potential 83(b) election are counsel/tax-adviser matters **only if actual restricted property is transferred**. The IRS generally requires a timely **83(b) election within 30 days of a qualifying transfer**; this template is **not** a tax filing or advice. An unexercised option or mere promised future stock does not trigger the same election automatically.
