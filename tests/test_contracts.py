@@ -263,5 +263,33 @@ class ContractDraftSafetyTests(unittest.TestCase):
         self.assertTrue(audit_readme(altered))
 
 
+class IndependentForkElectionTests(unittest.TestCase):
+    def test_consistent_prospective_company_cessation(self):
+        paths = (
+            "agreements/founding-engineer-forking-and-naming-addendum.md",
+            "agreements/founding-contributor-dual-entity-nonvoting-ownership-agreement.md",
+            "templates/company-4pct-nonvoting-equity-grant.md",
+            "templates/contributor-performance-and-vesting-record.md",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                text = (ROOT / path).read_text(encoding="utf-8")
+                for phrase in ("future vesting stops", "vested equity is retained",
+                               "on or after", "no automatic resumption"):
+                    self.assertIn(phrase, text.lower())
+
+    def test_fork_scope_and_foundation_safeguards(self):
+        fork = FORK_PATH.read_text(encoding="utf-8").lower()
+        for phrase in ("ordinary upstream development branches", "pull-request forks",
+                       "disinterested authorized reviewer", "no public distribution",
+                       "no retroactive change", "no private equity to surrender"):
+            self.assertIn(phrase, fork)
+        foundation = (ROOT / "agreements/foundation-founding-contributor-compensation-and-ip-royalties.md").read_text(encoding="utf-8").lower()
+        for phrase in ("no automatic termination or cross-default",
+                       "earned wages and fees", "enforceable ip royalty rights",
+                       "disinterested authorized foundation reviewer"):
+            self.assertIn(phrase, foundation)
+
+
 if __name__ == "__main__":
     unittest.main()
