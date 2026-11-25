@@ -2,8 +2,8 @@
 
 ## FOUNDING CONTRIBUTOR COMPANY EQUITY & FOUNDATION COMPENSATION FRAMEWORK AGREEMENT
 
-**Version:** 0.4 (proposed revision; supersedes draft v0.3, not any executed instrument)  
-**Date:** November 22, 2026  
+**Version:** 0.5 (proposed revision; supersedes draft v0.4, not any executed instrument)  
+**Date:** November 25, 2026  
 **Status:** DRAFT FOR LEGAL REVIEW — Company equity is not issued by this draft. Foundation compensation must be separately approved and contracted. Not a public license.
 
 ### PARTIES AND CONDITIONS PRECEDENT
@@ -112,11 +112,17 @@ On departure, issued vested Company equity remains subject to its definitive leg
 
 ---
 
+### 3.5 Independent fork election
+
+The Founder or Contributor may exercise the private-fork permission under the [Forking and Naming Addendum](founding-engineer-forking-and-naming-addendum.md), subject to its scope and restrictions. The Independent Fork Election definition, exclusions, notice, evidence, review and effective-date procedure in Section 8 of that addendum govern. For a signed Company service-vesting award expressly subject to this clause, **future vesting stops** on the election date; no installment with a qualifying period ending on or after that date accrues. Completed qualifying periods before that date remain eligible even if accepted later. **Vested equity is retained**; remaining unvested interests are governed by the signed lawful cancellation or repurchase terms. There is no automatic resumption; a new prospective signed agreement and approvals are required. No unrelated founder holdings are affected, and no Foundation equity exists under this instrument. All earned compensation, separate enforceable IP royalty rights and mandatory statutory rights are preserved. The clause is prospective, subject to applicable law and counsel review, and does not amend an executed grant without required written consent.
+
+---
+
 # ARTICLE 4 — PERFORMANCE AND CONTRIBUTION REQUIREMENTS
 
 ### 4.1 Minimum Monthly Requirement
 
-**The Contributor must complete a minimum of three (3) Qualifying Contributions per month. The same contribution record is used to calculate the vesting schedule for both eligible awards, without counting one deliverable twice within a given month.**
+**The Contributor must complete a minimum of three (3) Qualifying Contributions per month. The same contribution record is used to calculate the Company award vesting schedule, without counting one deliverable twice within a given month.**
 
 This requirement applies during both the initial three-month cliff and the subsequent 36-month vesting period.
 
@@ -642,4 +648,4 @@ Date: __________________________
 
 ---
 
-**End of Agreement — Version 0.4 (unexecuted draft).**
+**End of Agreement — Version 0.5 (unexecuted draft).**
